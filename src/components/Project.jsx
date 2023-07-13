@@ -31,7 +31,7 @@ const Project = ({ title }) => {
                 </span>
               </button>
 
-              <button className="flex w1/2 px-6 py-3 m-4 duration-200 border-4 border-gray-300 rounded-md hover:scale-105 text-bold">
+              <button className="flex w1/2 px-6 py-3 m-4 duration-200 border-2 border-black/50 rounded-md hover:scale-105 text-bold">
                 <a href={hdemo} target="_blank" rel="noreferrer">
                   Demo{" "}
                 </a>
