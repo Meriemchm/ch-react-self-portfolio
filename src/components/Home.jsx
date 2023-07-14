@@ -13,7 +13,7 @@ const Home = () => {
             I'm a <span className="font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 to-four">Frontend</span> Developer
           </h2>
           <p className="text-white/60 py-4 max-w-md">
-            {/* Chami Meriem here, a{" "} */}
+            Chami Meriem here, a{" "}
             <span className="text-bold text-white">react</span> and{" "}
             <span className="text-bold text-white">tailwind css</span> developer. I create dynamic and visually appealing web interfaces.
           </p>
@@ -40,7 +40,7 @@ const Home = () => {
         <div className="color-change rounded-full  md:flex items-center justify-center p-2">
      
             <img
-              src="personall.jpg"
+              src="personal.jpg"
               alt="MyProfile"
               className="rounded-full mx-auto md:w-[30rem] h-auto md:h-[20rem] object-cover "
             />
