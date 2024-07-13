@@ -1,36 +1,43 @@
-import React, { useState,useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
 import { Link } from "react-scroll";
-import { Navlink } from "./Data";
+import { Navlink } from "../Data/Data";
 
 const Navbar = () => {
   const [show, setShow] = useState(false);
-  const [bgColor, setBgColor] = useState('bg-transparent');
-  
+  const [bgColor, setBgColor] = useState("bg-transparent");
+  const [txtColor, setTxtColor] = useState("text-black");
+  const [logoColor, setLogoColor] = useState("bg-gradient-to-r");
+
   const handleScroll = () => {
     const scrollY = window.scrollY;
-    const threshold = 100; // seuil de défilement à partir duquel la couleur de fond est modifiée
+    const threshold = 100;
 
     if (scrollY > threshold) {
-      setBgColor('bg-gradient-to-r ');
-
+      setBgColor(" bg-slate-100 ");
+/*       setTxtColor("text-white")
+      setLogoColor("text-white") */
     } else {
-      setBgColor('bg-transparent');
+      setBgColor("bg-transparent");
+/*       setTxtColor("text-black")
+      setLogoColor("bg-gradient-to-r") */
     }
   };
 
   useEffect(() => {
-    window.addEventListener('scroll', handleScroll);
+    window.addEventListener("scroll", handleScroll);
     return () => {
-      window.removeEventListener('scroll', handleScroll);
+      window.removeEventListener("scroll", handleScroll);
     };
   }, []);
 
-
   return (
-    <div onScroll={handleScroll} className={`flex justify-between items-center w-full h-20 text-white px-4 md:px-20 ${bgColor} from-purple-800 via-purple-300 to-orange-300 fixed z-10`}    >
+    <div
+      onScroll={handleScroll}
+      className={`flex justify-between items-center w-full h-20 text-white px-4 md:px-20 ${bgColor} from-purple-500 to-purple-300  fixed z-10`}
+    >
       <div>
-        <h1 className=" font-extrabold text-transparent text-4xl ml-2 md:text-5xl bg-clip-text bg-gradient-to-r from-yellow-500 to-four">
+        <h1 className={`font-extrabold text-transparent text-4xl ml-2 md:text-5xl bg-clip-text  from-yellow-500 to-four ${logoColor} `}>
           CM
         </h1>
       </div>
@@ -40,7 +47,7 @@ const Navbar = () => {
           return (
             <li
               key={id}
-              className="px-8 cursor-pointer font-light text-lg text-white/60 hover:scale-105 duration-200 capitalize"
+              className={`px-8 cursor-pointer font-light text-lg  hover:scale-105 duration-200 capitalize ${txtColor} `}
             >
               <Link to={link} smooth duration={500}>
                 {link}
@@ -80,7 +87,7 @@ const Navbar = () => {
       <button className="hidden bg-gradient-to-r from-four to-yellow-500 px-5 py-2 rounded-md border-4 lg:block text-orange-900 text-bold duration-200 hover:scale-105 ">
         {" "}
         <Link to="contact" smooth duration={500}>
-          Let's Talk
+          Contact
         </Link>
       </button>
     </div>

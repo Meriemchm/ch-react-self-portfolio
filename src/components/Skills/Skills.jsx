@@ -1,19 +1,19 @@
 import React from "react";
 import { GiSkills } from "react-icons/gi";
 import Skill from "./Skill";
-import { techs } from "./Data";
+import { techs } from "../Data/Data";
 
 const Skills = () => {
-  const frontTechs = techs.filter((tech) => tech.type === "frontend");
-  const designTechs = techs.filter((tech) => tech.type === "design");
+  const frontTechs = techs.filter((tech) => tech.type === "programming languages");
+  const designTechs = techs.filter((tech) => tech.type === "framework");
   const othersTechs = techs.filter((tech) => tech.type === "others");
 
   return (
-    <div name="skills" className="bg-white w-full ">
-      <div className="max-w-screen-lg mx-auto p-4 flex flex-col  w-full h-full text-white">
+    <div name="skills" className="bg-white w-full  ">
+      <div className="max-w-screen-lg mx-auto p-4 flex flex-col  w-full min-h-screen text-white">
         <div className="mt-8">
           <div className="flex gap-3">
-            <div className="bg-gradient-to-b from-purple-500 to-purple-300 flex justify-center items-center px-2 rounded-lg ">
+            <div className="bg-primary flex justify-center items-center px-2 rounded-lg ">
               <GiSkills size={40} />
             </div>
             <p className="text-4xl text-primary font-bold p-2 inline">Skills</p>
@@ -23,9 +23,9 @@ const Skills = () => {
           </p>
         </div>
         {/* others */}
-        <Skill Title="Front-end" data={frontTechs} />
+        <Skill Title="Programming languages" data={frontTechs} />
         {/* design */}
-        <Skill Title="Design" data={designTechs} />
+        <Skill Title="framework " data={designTechs} />
         {/* others */}
         <Skill Title="Others" data={othersTechs} />
       </div>

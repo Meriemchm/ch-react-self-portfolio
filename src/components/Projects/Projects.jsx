@@ -4,11 +4,11 @@ import SideBar from "../SideBar/SideBar";
 
 const Projects = () => {
   return (
-    <div name="project" className="bg-white w-full md:h-screen">
-      <div className="max-w-screen-lg p-4 mx-auto  flex flex-col w-full h-full md:border-0 border-b-2 border-gray-200">
+    <div name="project" className="bg-white w-full min-h-screen">
+      <div className="max-w-screen-lg p-4 mx-auto  flex flex-col w-full h-full ">
         <div className="mt-8">
           <div className="flex gap-3">
-            <div className="bg-gradient-to-b from-purple-500 to-purple-300 flex justify-center items-center px-2 rounded-lg ">
+            <div className="bg-primary flex justify-center items-center px-2 rounded-lg ">
               <GoProjectSymlink size={40} className="text-white" />
             </div>
             <p className="text-4xl text-primary font-bold p-2 inline">

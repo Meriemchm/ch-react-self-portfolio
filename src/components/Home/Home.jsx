@@ -1,21 +1,40 @@
 import React from "react";
-import { links } from "./Data";
+import { links } from "../Data/Data";
+import personal from "../../assets/personal.jpg";
 const Home = () => {
-
   return (
     <div
       name="home"
       className="flex md:h-screen w-full bg-gradient-to-r from-purple-800 via-purple-400 to-orange-300 py-4 "
     >
-      <div className="max-w-screen-lg mx-auto flex flex-col-reverse justify-center items-center h-full px-8 my-16 gap-5 md:gap-0 md:flex-row md:my-0">
+      <div
+        data-aos="fade-up"
+        className="max-w-screen-lg mx-auto flex flex-col-reverse justify-center items-center h-full px-8 my-16 gap-5 md:gap-0 md:flex-row md:my-0"
+      >
         <div className="flex flex-col md:justify-center h-full">
           <h2 className="text-4xl md:text-7xl font-bold text-white">
-            I'm a <span className="font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 to-four">Frontend</span> Developer
+            I'm a{" "}
+            <span className="font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 to-four">
+              Software{" "}
+            </span>{" "}
+            Developer
           </h2>
-          <p className="text-white/60 py-4 max-w-md">
-            Chami Meriem here, a{" "}
-            <span className="text-bold text-white">react</span> and{" "}
-            <span className="text-bold text-white">tailwind css</span> developer. I create dynamic and visually appealing web interfaces.
+          <p className="text-white py-4 max-w-md">
+            Chami Meriem here, As a frontend developer, I excel in using
+            technologies like{" "}
+            <span className="text-bold text-four">React </span>and{" "}
+            <span className="text-bold text-four">Tailwind CSS</span> to build
+            responsive and dynamic websites. I leverage your expertise in API
+            integration to connect these frontend solutions with backend
+            services, ensuring robust functionality and data-driven interactions
+            , I can integrate Firebase or similar various technologies .I
+            develop software applications using{" "}
+            <span className="text-bold text-four">WinDev</span>, I use its
+            visual tools and procedural language to efficiently build, and
+            deploy robust desktop and database-driven applications. Finaly{" "}
+            <span className="text-bold text-four">Figma</span> a design tool who
+            allow me to conceptualize and prototype user interfaces with
+            precision .{" "}
           </p>
           <div className="flex">
             <ul className="flex flex-row ">
@@ -38,14 +57,12 @@ const Home = () => {
           </div>
         </div>
         <div className="color-change rounded-full  md:flex items-center justify-center p-2">
-     
-            <img
-              src="personal.jpg"
-              alt="MyProfile"
-              className="rounded-full mx-auto md:w-[30rem] h-auto md:h-[20rem] object-cover "
-            />
-          </div>
-    
+          <img
+            src={personal}
+            alt="MyProfile"
+            className="rounded-full mx-auto md:w-[30rem] h-auto md:h-[20rem] object-cover "
+          />
+        </div>
       </div>
     </div>
   );
