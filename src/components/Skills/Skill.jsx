@@ -5,7 +5,7 @@ const Skill = ({ Title, data }) => {
     <>
       <h2 className="text-2xl text-gray-500 py-4">{Title}</h2>
       <div data-aos="fade-up"  className="rounded-xl ">
-        <div className=" w-full grid grid-cols-2 sm:grid-cols-3 text-center py-8 sm:px-0 justify-center rounded-2xl">
+        <div className=" w-full grid grid-cols-2 sm:grid-cols-4 text-center py-8 sm:px-0 justify-center rounded-2xl">
           {data.map(({ id, title, child, style }) => (
             <div
               key={id}
