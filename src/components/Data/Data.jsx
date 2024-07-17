@@ -13,25 +13,26 @@ import { PiAppWindowLight } from "react-icons/pi";
 import rameem from "../../assets/rameem.jpg";
 import { IoLogoPython } from "react-icons/io5";
 import { IoLogoJavascript } from "react-icons/io";
+import { TbBrandFiverr } from "react-icons/tb";
 
 export const techs = [
   {
     id: 1,
-    child: <FaReact color="white" size={35} />,
+    child: <FaReact color="white" size={45} />,
     title: "React",
     style: " bg-gradient-to-r from-yellow-500 to-four",
     type: "framework",
   },
   {
     id: 2,
-    child: <SiTailwindcss className="text-white" size={35} />,
+    child: <SiTailwindcss className="text-white" size={45} />,
     title: "tailwindcss",
     style: "",
     type: "framework",
   },
   {
     id: 5,
-    child: <IoLogoPython  className="text-white" size={35} />,
+    child: <IoLogoPython className="text-white" size={45} />,
     title: "Python",
     style: "",
     type: "programming languages",
@@ -39,7 +40,7 @@ export const techs = [
 
   {
     id: 7,
-    child: <IoLogoJavascript  className="text-white" size={35} />,
+    child: <IoLogoJavascript className="text-white" size={45} />,
     title: "Java script",
     style: "",
     type: "programming languages",
@@ -47,21 +48,21 @@ export const techs = [
 
   {
     id: 3,
-    child: <FaFigma color="white" size={35} />,
+    child: <FaFigma color="white" size={45} />,
     title: "Figma",
     style: "",
     type: "others",
   },
   {
     id: 4,
-    child: <BiLogoGit className="text-white" size={35} />,
+    child: <BiLogoGit className="text-white" size={45} />,
     title: "Git & Github",
     style: "",
     type: "others",
   },
   {
     id: 6,
-    child: '',
+    child: "",
     title: "Windev",
     style: "",
     type: "others",
@@ -88,6 +89,15 @@ export const links = [
     href: "https://github.com/Meriemchm",
   },
   {
+    id: 5,
+    mobile: (
+      <>
+        <TbBrandFiverr size={30} />
+      </>
+    ),
+    href: "https://fr.fiverr.com/meriem_chami?up_rollout=true",
+  },
+  {
     id: 3,
     mobile: (
       <>
@@ -96,6 +106,7 @@ export const links = [
     ),
     href: "mailto:chamimeriem0223@gmail.com",
   },
+
   {
     id: 4,
     mobile: (
@@ -186,7 +197,8 @@ export const projects = [
     id: 3,
     src: rameem,
     title: "rameem",
-    description: "Welcome to the Psychologists Website, designed and developed for a client. This project utilizes React and Tailwind CSS for the frontend, providing a modern and responsive user interface. The backend is powered by Express, although I wasn't directly involved in the backend development.",
+    description:
+      "Welcome to the Psychologists Website, designed and developed for a client. This project utilizes React and Tailwind CSS for the frontend, providing a modern and responsive user interface. The backend is powered by Express, although I wasn't directly involved in the backend development.",
     hcode: "",
     hdemo: "https://rameemm.netlify.app",
   },

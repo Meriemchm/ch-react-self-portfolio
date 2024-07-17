@@ -13,7 +13,7 @@ const Skill = ({ Title, data }) => {
             >
               <div className="flex  shadow-md shadow-white/20 md:backdrop-blur-sm rounded-lg  ">
                 <div
-                  className={`m-auto rounded-md w-16 h-16  bg-purple-400 flex justify-center items-center ${style}`}
+                  className={`m-auto rounded-full w-20 h-20  bg-purple-400 flex justify-center items-center ${style}`}
                 >
                   {child}
                 </div>
