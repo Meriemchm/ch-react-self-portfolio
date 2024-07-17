@@ -24,17 +24,12 @@ const Home = () => {
             technologies like{" "}
             <span className="text-bold text-four">React </span>and{" "}
             <span className="text-bold text-four">Tailwind CSS</span> to build
-            responsive and dynamic websites. I leverage your expertise in API
-            integration to connect these frontend solutions with backend
-            services, ensuring robust functionality and data-driven interactions
-            , I can integrate Firebase or similar various technologies .I
-            develop software applications using{" "}
-            <span className="text-bold text-four">WinDev</span>, I use its
-            visual tools and procedural language to efficiently build, and
-            deploy robust desktop and database-driven applications. Finaly{" "}
+            responsive and dynamic websites. I use{" "}
             <span className="text-bold text-four">Figma</span> a design tool who
             allow me to conceptualize and prototype user interfaces with
-            precision .{" "}
+            precision . Finaly, For software development, I use WinDev primarily
+            for its robust features and development environment tailored for
+            rapid application development.{" "}
           </p>
           <div className="flex">
             <ul className="flex flex-row ">

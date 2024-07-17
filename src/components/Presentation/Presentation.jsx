@@ -11,11 +11,12 @@ const Presentation = () => {
       <div className="absolute inset-0  mx-auto justify-center items-center h-full px-5 sm:px-0 sm:w-1/2">
         <div className="flex flex-col justify-center h-full gap-8  ">
           <div className="flex flex-col justify-center ">
-            <h2 className="text-3xl md:text-5xl xl:text-6xl font-bold py-5 ">
-              Hey there, I am a
+            <h2 className="text-4xl md:text-5xl xl:text-6xl self-center font-bold py-5 ">
+              Welcome !
             </h2>
-            <p className=" text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-purple-300 text-4xl md:text-6xl xl:text-8xl font-bold text-right">
-              Software Developer
+
+            <p className=" text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-purple-300 text-3xl md:text-6xl xl:text-7xl font-bold text-right">
+              Software Developer <span className="text-black">Here</span>
             </p>
           </div>
           <div className="flex  ">

@@ -4,8 +4,8 @@ import Project from "../Projects/Project";
 
 const activeButton = "bg-four";
 const activeColor = "bg-four/50";
-const activetext = "text-gray-800";
-const activeshadow = "border-four";
+const activetext = "text-four";
+const activebg = "border-four";
 
 
 const SideBar = () => {
@@ -25,17 +25,10 @@ const SideBar = () => {
             return (
               <div key={id} onClick={() => handleClick(id)}>
                 <li
-                  className={`flex border md:py-5 px-3 py-3 w-full md:px-5 justify-start items-center md:gap-5 gap-2 bg-gray-100/50 shadow-md lg:w-5/6 rounded-lg cursor-pointer hover:shadow-primary/30
-                  ${active[id] ? activeshadow : ""
+                  className={`flex border md:py-5 px-3 py-3 w-full md:px-5 justify-start items-center md:gap-5 gap-2 bg-gray-100/50 shadow-md lg:w-5/6 rounded-lg cursor-pointer 
+                  ${active[id] ? activebg : ""
                 }`} 
                 >
-                  <div className={`flex  shadow-md shadow-white/50 backdrop-blur-sm rounded-lg w-12 h-12 ${active[id] ? activeColor : "bg-purple-200 "
-                  }`} >
-                    <div className={`m-auto rounded-md w-10 h-10   flex justify-center items-center ${active[id] ? activeButton : "bg-purple-400"
-                  }`}>
-                      {item.icon}
-                    </div>
-                  </div>
                   <p className={` text-bold capitalize ${active[id] ? activetext : "text-second"
                   }`}>
                     {" "}

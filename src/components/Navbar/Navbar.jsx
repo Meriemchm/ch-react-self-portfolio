@@ -84,7 +84,7 @@ const Navbar = () => {
           })}
         </ul>
       )}
-      <button className="hidden bg-gradient-to-r from-four to-yellow-500 px-5 py-2 rounded-md border-4 lg:block text-orange-900 text-bold duration-200 hover:scale-105 ">
+      <button className="hidden bg-gradient-to-r from-four to-yellow-500 px-6 py-3 rounded-md  lg:block text-orange-900 text-bold duration-200 hover:scale-105 ">
         {" "}
         <Link to="contact" smooth duration={500}>
           Contact

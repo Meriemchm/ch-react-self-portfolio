@@ -120,11 +120,11 @@ export const Navlink = [
   },
   {
     id: 3,
-    link: "service",
+    link: "services",
   },
   {
     id: 4,
-    link: "project",
+    link: "projects",
   },
   {
     id: 5,
@@ -151,7 +151,7 @@ export const services = [
   {
     id: 5,
     src: <IoQrCodeOutline size={50} className="text-black self-center" />,
-    title: "QR Code Menu Website",
+    title: "Degital Menu QR Code",
     style: "bg-white",
     textStyle: "text-second",
   },
