@@ -204,11 +204,13 @@ export const projects = [
   },
   {
     id: 4,
-    src: "podcast.jpg",
-    title: "Coffee",
-    description: "lorem",
-    hcode: "hcode",
-    hdemo: "",
+    src: "digital-menu.png",
+    title: "Digital menu",
+    description:
+      "A responsive digital menu custom-built with React and Tailwind CSS, featuring a QR code for easy access . (you can access the website with the Qr code on the picture)",
+    hcode:
+      "https://github.com/Meriemchm/chm_QR_Code_Digital_Menu_React_Website_two",
+    hdemo: "https://coffee-shopp-menu.netlify.app",
   },
 ];
 
@@ -231,12 +233,12 @@ export const menuItem = [
     title: "rameem",
     icon: <BiPodcast size={25} className="text-white" />,
   },
-  // {
-  //   id: 4,
-  //   path: "/Coffee",
-  //   title: "Coffee",
-  //   icon: <BiPodcast size={25} className="text-white" />,
-  // },
+  {
+    id: 4,
+    path: "/Digital menu",
+    title: "Digital menu",
+    icon: <BiPodcast size={25} className="text-white" />,
+  },
 ];
 
 export const formItem = [

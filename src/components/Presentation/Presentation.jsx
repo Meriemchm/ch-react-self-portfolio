@@ -1,5 +1,9 @@
-import React from "react";
+import React, { Suspense } from "react";
 import { links } from "../Data/Data";
+import Cylinder3d from "../Cylinder3d/Cylinder3d";
+import { Canvas } from "@react-three/fiber";
+import { Environment, OrbitControls } from "@react-three/drei";
+import Scene from "../../../public/Scene";
 
 const Presentation = () => {
   return (
@@ -14,6 +18,19 @@ const Presentation = () => {
             <h2 className="text-4xl md:text-5xl xl:text-6xl self-center font-bold py-5 ">
               Welcome !
             </h2>
+            {/* <div className="flex justify-start items-start absolute -top-20 ">
+              <Canvas className="">
+                {/* <pointLight position={[10, 10, 10]} /> */}
+                {/* <ambientLight /> */}
+                {/* <Suspense fallback={null}>
+                  <ambientLight intensity={1.5} />
+                  <OrbitControls enableZoom={false} autoRotate={true} rotateSpeed={0.25} />
+                  <Scene  />
+                </Suspense>
+
+                <Environment preset="sunset" />
+              </Canvas>
+            </div> */} 
 
             <p className=" text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-purple-300 text-3xl md:text-6xl xl:text-7xl font-bold text-right">
               Software Developer <span className="text-black">Here</span>
