@@ -19,13 +19,13 @@ const SideBar = () => {
   };
   return (
     <>
-      <div className="md:w-1/3 md:h-full  overflow-y-scroll ">
+      <div className="md:w-1/3 md:h-full  overflow-x-scroll md:overflow-y-scroll md:overflow-x-hidden ">
         <div className="flex flex-row md:flex-col gap-5 p-2 select-none ">
           {menuItem.map((item, id) => {
             return (
               <div key={id} onClick={() => handleClick(id)}>
                 <li
-                  className={`flex border md:py-5 px-3 py-3 w-full md:px-5 justify-start items-center md:gap-5 gap-2 bg-gray-100/50 shadow-md lg:w-5/6 rounded-lg cursor-pointer 
+                  className={`flex border md:py-5 px-3 py-3 md:px-5 justify-start items-center md:gap-5 gap-2 bg-gray-100/50 shadow-md lg:w-5/6 rounded-lg cursor-pointer w-44
                   ${active[id] ? activebg : ""
                 }`} 
                 >

@@ -10,7 +10,7 @@ const Project = ({ title }) => {
       {" "}
       {project.map(({ id, src, title, description, hcode, hdemo }) => {
         return (
-          <div data-aos="fade-up"  key={id} className="flex flex-col ">
+          <div data-aos="fade-up" key={id} className="flex flex-col ">
             <img
               src={src}
               alt=""
@@ -26,7 +26,7 @@ const Project = ({ title }) => {
             <div className="flex text-gray-500 ">
               {hcode !== "" ? (
                 <button className="flex w1/2 px-6 py-3 m-4 duration-200 hover:scale-105">
-                  <a href={hcode} target="_blank" rel="noreferrer">
+                  <a href={hcode} target="_blank" rel="noreferrer" className="font-bold text-lg">
                     Code
                   </a>
                   <span>
@@ -35,15 +35,16 @@ const Project = ({ title }) => {
                 </button>
               ) : null}
 
-              <button className="flex w1/2 px-6 py-3 m-4 duration-200 border-2 border-black/50 rounded-md hover:scale-105 text-bold">
-                <a href={hdemo} target="_blank" rel="noreferrer">
-                  Demo{" "}
-                </a>
-
-                <span>
-                  <CiShare1 size={20} className="ml-2 mt-1 text-gray-500 " />
-                </span>
-              </button>
+              {hdemo !== "" ? (
+                <button className="flex w1/2 px-6 py-3 m-4 duration-200 hover:scale-105 border rounded-md">
+                  <a href={hdemo} target="_blank" rel="noreferrer" className="font-bold text-lg">
+                    Demo
+                  </a>
+                  <span>
+                    <CiShare1 size={25} className="ml-2" />
+                  </span>
+                </button>
+              ) : null}
             </div>
           </div>
         );

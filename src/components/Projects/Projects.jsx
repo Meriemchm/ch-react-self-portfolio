@@ -2,6 +2,7 @@ import React from "react";
 import { GoProjectSymlink } from "react-icons/go";
 import SideBar from "../SideBar/SideBar";
 import Title from "../Title/Title";
+import { FaGithub } from "react-icons/fa";
 
 const Projects = () => {
   return (
@@ -12,12 +13,24 @@ const Projects = () => {
           title="Projects"
           description="There is my work."
         />
-
         {/*projects*/}
-
         <div className="flex flex-col md:flex-row">
           <SideBar />
         </div>
+
+        <a
+          href="https://github.com/Meriemchm"
+          target="_blank"
+          rel="noreferrer"
+          className="flex gap-2 hover:text-third py-6"
+        >
+          <h2 className="self-center font-bold underline md:text-xl text-lg ">
+            For more projects visit my github{" "}
+          </h2>
+          <span>
+            <FaGithub size={30} className="" />
+          </span>{" "}
+        </a>
       </div>
     </div>
   );

@@ -185,14 +185,15 @@ export const projects = [
     hcode: "https://github.com/Meriemchm/chm_react_ramzey_chabira_portfolio",
     hdemo: "https://ramzeychabira.netlify.app",
   },
-  // {
-  //   id: 2,
-  //   src: "podcast.jpg",
-  //   title: "So9tech",
-  //   description: "lorem",
-  //   hcode: "hcode",
-  //   hdemo: "",
-  // },
+  {
+    id: 2,
+    src: "Soktech.png",
+    title: "Soktech",
+    description:
+      "This is a unfinished e-commerce project website to publish services or request a service. I was responsible for the design and frontend development with React js and Css , while my teammate, handled the backend development with Laravel and MySQL is used as the database, running on XAMPP in a local environment.",
+    hcode: "https://github.com/Meriemchm/Soktech",
+    hdemo: "",
+  },
   {
     id: 3,
     src: rameem,
@@ -202,6 +203,7 @@ export const projects = [
     hcode: "",
     hdemo: "https://rameemm.netlify.app",
   },
+
   {
     id: 4,
     src: "digital-menu.png",
@@ -216,23 +218,26 @@ export const projects = [
 
 export const menuItem = [
   {
-    id: 1,
-    path: "/portfolio",
-    title: "portfolio",
-    icon: <MdPersonalVideo size={25} className="text-white" />,
-  },
-  // {
-  //   id: 2,
-  //   path: "/So9tech",
-  //   title: "So9tech",
-  //   icon: <BiPodcast size={25} className="text-white" />,
-  // },
-  {
     id: 3,
     path: "/rameem",
     title: "rameem",
     icon: <BiPodcast size={25} className="text-white" />,
   },
+
+  {
+    id: 2,
+    path: "/Soktech",
+    title: "Soktech",
+    icon: <BiPodcast size={25} className="text-white" />,
+  },
+
+  {
+    id: 1,
+    path: "/portfolio",
+    title: "portfolio",
+    icon: <MdPersonalVideo size={25} className="text-white" />,
+  },
+
   {
     id: 4,
     path: "/Digital menu",
