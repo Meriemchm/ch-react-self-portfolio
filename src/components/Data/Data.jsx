@@ -116,7 +116,6 @@ export const links = [
     ),
     style: "rounded-br-md",
     href: "/resume.pdf",
-    download: true,
   },
 ];
 
@@ -214,6 +213,16 @@ export const projects = [
       "https://github.com/Meriemchm/chm_QR_Code_Digital_Menu_React_Website_two",
     hdemo: "https://coffee-shopp-menu.netlify.app",
   },
+  {
+    id: 5,
+    src: "1.png",
+    title: "Windev",
+    description:
+      "A cafeteria management software, developed with WinDev, features two main interfaces: one for the admin and one for the cashier. ",
+    hdemo: "",
+    hcode: "https://github.com/Meriemchm/chm_cafeteria_-stock_manager",
+
+  },
 ];
 
 export const menuItem = [
@@ -221,28 +230,35 @@ export const menuItem = [
     id: 3,
     path: "/rameem",
     title: "rameem",
-    icon: <BiPodcast size={25} className="text-white" />,
+
   },
 
   {
     id: 2,
     path: "/Soktech",
     title: "Soktech",
-    icon: <BiPodcast size={25} className="text-white" />,
+
   },
 
   {
     id: 1,
     path: "/portfolio",
     title: "portfolio",
-    icon: <MdPersonalVideo size={25} className="text-white" />,
+
   },
 
   {
     id: 4,
     path: "/Digital menu",
     title: "Digital menu",
-    icon: <BiPodcast size={25} className="text-white" />,
+
+  },
+
+  {
+    id: 4,
+    path: "/Digital menu",
+    title: "Windev",
+
   },
 ];
 

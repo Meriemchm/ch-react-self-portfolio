@@ -7,7 +7,7 @@ const Contact = () => {
   const inputItem = formItem.filter((item) => item.categorie === "input");
   const areaItem = formItem.filter((item) => item.categorie === "textarea");
   return (
-    <div name="contact" className="w-full min-h-screen bg-slate-100 ">
+    <div name="contact" className="w-full min-h-screen ">
       <div className="flex flex-col p-4 max-w-screen-lg mx-auto h-full  ">
         <Title
           icon={<MdConnectWithoutContact size={40} className="text-white" />}
@@ -32,7 +32,7 @@ const Contact = () => {
                   name={item.name}
                   autoComplete="off"
                   placeholder={item.placeholder}
-                  className="p-2 bg-transparent border-b-2 border-b-gray  text-gray placeholder-gray focus:outline-none"
+                  className="p-2 bg-transparent border-b-2 border-b-gray-400  text-gray placeholder-gray focus:outline-none"
                 />
               );
             })}
@@ -44,7 +44,7 @@ const Contact = () => {
                   placeholder={item.placeholder}
                   rows="10"
                   autoComplete="off"
-                  className="resize-none p-2 bg-transparent border-2 border-gray rounded-md text-gray placeholder-gray focus:outline-none"
+                  className="resize-none p-2 bg-transparent border-2 border-gray-400 rounded-md text-gray placeholder-gray focus:outline-none"
                 ></textarea>
               );
             })}
