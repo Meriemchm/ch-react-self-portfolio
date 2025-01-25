@@ -107,16 +107,16 @@ export const links = [
     href: "mailto:chamimeriem0223@gmail.com",
   },
 
-  {
-    id: 4,
-    mobile: (
-      <>
-        <BsFillPersonLinesFill size={30} />
-      </>
-    ),
-    style: "rounded-br-md",
-    href: "/resume.pdf",
-  },
+  // {
+  //   id: 4,
+  //   mobile: (
+  //     <>
+  //       <BsFillPersonLinesFill size={30} />
+  //     </>
+  //   ),
+  //   style: "rounded-br-md",
+  //   href: "/resume.pdf",
+  // },
 ];
 
 export const Navlink = [
