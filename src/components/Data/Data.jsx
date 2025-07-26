@@ -92,7 +92,7 @@ export const links = [
     id: 5,
     mobile: (
       <>
-        <TbBrandFiverr size={30} />
+        <TbBrandFiverr size={30} className="bg-third rounded-full p-1 shadow-md" />
       </>
     ),
     href: "https://fr.fiverr.com/meriem_chami?public_mode=true",

@@ -3,6 +3,7 @@ import { GiSkills } from "react-icons/gi";
 import Skill from "./Skill";
 import { techs } from "../Data/Data";
 import Title from "../Utilities/Title";
+import design from "../../assets/Icons/design.svg";
 
 const Skills = () => {
   const frontTechs = techs.filter(
@@ -12,19 +13,32 @@ const Skills = () => {
   const othersTechs = techs.filter((tech) => tech.type === "others");
 
   return (
-    <div name="skills" className="bg-white w-full  ">
-      <div className="max-w-screen-lg mx-auto p-4 flex flex-col  w-full min-h-screen ">
+    <div name="skills" className="bg-white w-full">
+      <div className="max-w-screen-lg mx-auto p-4 flex flex-col w-full min-h-screen">
         <Title
           icon={<GiSkills size={40} className="text-white" />}
           title="Skills"
-          description="There is the tools i work with."
+          description="There is the tools I work with."
         />
-        {/* others */}
-        <Skill Title="Programming languages" data={frontTechs} />
-        {/* design */}
-        <Skill Title="framework " data={designTechs} />
-        {/* others */}
-        <Skill Title="Others" data={othersTechs} />
+
+        {/* wrapper en row */}
+        <div className="flex flex-col md:flex-row items-center justify-between mt-8 gap-8">
+          {/* Colonne des skills */}
+          <div className="flex-1">
+            <Skill Title="Programming languages" data={frontTechs} />
+            <Skill Title="Framework" data={designTechs} />
+            <Skill Title="Others" data={othersTechs} />
+          </div>
+
+          {/* Image à droite */}
+          <div className="flex-1 flex justify-center items-start ">
+            <img
+              src={design}
+              alt="design illustration"
+              className=""
+            />
+          </div>
+        </div>
       </div>
     </div>
   );

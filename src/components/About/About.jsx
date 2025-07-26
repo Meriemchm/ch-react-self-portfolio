@@ -3,6 +3,8 @@ import { links } from "../Data/Data";
 import personal from "../../assets/personal.jpg";
 import vector from "../../assets/Icons/vector.svg";
 import circle from "../../assets/Icons/circle.svg";
+import plus from "../../assets/Icons/plus.svg";
+
 const Home = () => {
   return (
     <div
@@ -53,7 +55,7 @@ const Home = () => {
         </div>
         <div className="relative  hover:scale-105 duration-200">
           {/* Vecteur en dessous */}
-          <img src={circle} className="absolute top-5 -left-2 z-10" />
+          <img src={circle} alt="icon-circle" className="absolute top-5 -left-2 z-10" />
 
           {/* Ton image en dessus */}
           <div className=" rounded-full z-20 md:flex items-center justify-center p-2">
@@ -63,6 +65,7 @@ const Home = () => {
               className="rounded-full mx-auto md:w-[28rem] h-auto md:h-[22rem] object-cover"
             />
           </div>
+          <img src={plus} alt="icon-plus" className="absolute top-0 right-0" />
         </div>
       </div>
       <img src={vector} alt="vector" className="absolute bottom-0 z-0" />
