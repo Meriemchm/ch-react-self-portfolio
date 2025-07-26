@@ -2,7 +2,7 @@ import React from "react";
 import { GiSkills } from "react-icons/gi";
 import Skill from "./Skill";
 import { techs } from "../Data/Data";
-import Title from "../Title/Title";
+import Title from "../Utilities/Title";
 
 const Skills = () => {
   const frontTechs = techs.filter(
@@ -13,9 +13,9 @@ const Skills = () => {
 
   return (
     <div name="skills" className="bg-white w-full  ">
-      <div className="max-w-screen-lg mx-auto p-4 flex flex-col  w-full min-h-screen text-white">
+      <div className="max-w-screen-lg mx-auto p-4 flex flex-col  w-full min-h-screen ">
         <Title
-          icon={<GiSkills size={40} />}
+          icon={<GiSkills size={40} className="text-white" />}
           title="Skills"
           description="There is the tools i work with."
         />

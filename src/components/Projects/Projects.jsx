@@ -1,7 +1,7 @@
 import React from "react";
 import { GoProjectSymlink } from "react-icons/go";
-import SideBar from "../SideBar/SideBar";
-import Title from "../Title/Title";
+import SideBar from "../Utilities/SideBar";
+import Title from "../Utilities/Title";
 import { FaGithub } from "react-icons/fa";
 
 const Projects = () => {
@@ -18,19 +18,21 @@ const Projects = () => {
           <SideBar />
         </div>
 
-        <a
-          href="https://github.com/Meriemchm"
-          target="_blank"
-          rel="noreferrer"
-          className="flex gap-2 hover:text-third py-6"
-        >
-          <h2 className="self-center font-bold underline md:text-xl text-lg ">
-            For more projects visit my github{" "}
-          </h2>
-          <span>
-            <FaGithub size={30} className="" />
-          </span>{" "}
-        </a>
+        <div className=" hover:scale-105 duration-200">
+          <a
+            href="https://github.com/Meriemchm"
+            target="_blank"
+            rel="noreferrer"
+            className="flex gap-2  py-6"
+          >
+            <h2 className="self-center font-bold underline md:text-xl text-lg ">
+              For more projects visit my github{" "}
+            </h2>
+            <span>
+              <FaGithub size={30} className="" />
+            </span>{" "}
+          </a>
+        </div>
       </div>
     </div>
   );

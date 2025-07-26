@@ -29,7 +29,7 @@ const SideBar = () => {
                   ${active[id] ? activebg : ""
                 }`} 
                 >
-                  <p className={` text-bold capitalize ${active[id] ? activetext : "text-second"
+                  <p className={` text-bold capitalize ${active[id] ? activetext : "text-gray-500"
                   }`}>
                     {" "}
                     {item.title}

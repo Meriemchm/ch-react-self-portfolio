@@ -18,23 +18,23 @@ import { TbBrandFiverr } from "react-icons/tb";
 export const techs = [
   {
     id: 1,
-    child: <FaReact color="white" size={45} />,
+    child: <FaReact color="black" size={45} />,
     title: "React",
-    style: " bg-gradient-to-r from-yellow-500 to-four",
+    style: " bg-second",
     type: "framework",
   },
   {
     id: 2,
     child: <SiTailwindcss className="text-white" size={45} />,
     title: "tailwindcss",
-    style: "",
+    style: "bg-black",
     type: "framework",
   },
   {
     id: 5,
     child: <IoLogoPython className="text-white" size={45} />,
     title: "Python",
-    style: "",
+    style: "bg-black",
     type: "programming languages",
   },
 
@@ -42,7 +42,7 @@ export const techs = [
     id: 7,
     child: <IoLogoJavascript className="text-white" size={45} />,
     title: "Java script",
-    style: "",
+    style: "bg-black",
     type: "programming languages",
   },
 
@@ -50,21 +50,21 @@ export const techs = [
     id: 3,
     child: <FaFigma color="white" size={45} />,
     title: "Figma",
-    style: "",
+    style: "bg-black",
     type: "others",
   },
   {
     id: 4,
     child: <BiLogoGit className="text-white" size={45} />,
     title: "Git & Github",
-    style: "",
+    style: "bg-black",
     type: "others",
   },
   {
     id: 6,
     child: "",
     title: "Windev",
-    style: "",
+    style: "bg-black",
     type: "others",
   },
 ];
@@ -95,7 +95,7 @@ export const links = [
         <TbBrandFiverr size={30} />
       </>
     ),
-    href: "https://fr.fiverr.com/meriem_chami?up_rollout=true",
+    href: "https://fr.fiverr.com/meriem_chami?public_mode=true",
   },
   {
     id: 3,
@@ -125,6 +125,10 @@ export const Navlink = [
     link: "home",
   },
   {
+    id: 6,
+    link: "about",
+  },
+  {
     id: 2,
     link: "skills",
   },
@@ -149,28 +153,28 @@ export const services = [
     title: "Portfolio / showcase site",
 
     style: "bg-white",
-    textStyle: "text-second",
+    textStyle: "text-black",
   },
   {
     id: 3,
-    src: <PiAppWindowLight size={50} className="text-white  self-center" />,
+    src: <PiAppWindowLight size={50} className=" text-black self-center" />,
     title: "Web application ",
-    style: "bg-primary",
-    textStyle: "text-white",
+    style: "bg-third",
+    textStyle: "text-black",
   },
   {
     id: 5,
     src: <IoQrCodeOutline size={50} className="text-black self-center" />,
     title: "Degital Menu QR Code",
     style: "bg-white",
-    textStyle: "text-second",
+    textStyle: "text-black",
   },
   {
     id: 4,
     src: <MdOutlineQueryStats size={50} className="text-black self-center" />,
     title: "Stock Manager ",
     style: "bg-white",
-    textStyle: "text-second",
+    textStyle: "text-black",
   },
 ];
 
@@ -221,7 +225,6 @@ export const projects = [
       "A cafeteria management software, developed with WinDev, features two main interfaces: one for the admin and one for the cashier. ",
     hdemo: "",
     hcode: "https://github.com/Meriemchm/chm_cafeteria_-stock_manager",
-
   },
 ];
 
@@ -230,35 +233,30 @@ export const menuItem = [
     id: 3,
     path: "/rameem",
     title: "rameem",
-
   },
 
   {
     id: 2,
     path: "/Soktech",
     title: "Soktech",
-
   },
 
   {
     id: 1,
     path: "/portfolio",
     title: "portfolio",
-
   },
 
   {
     id: 4,
     path: "/Digital menu",
     title: "Digital menu",
-
   },
 
   {
     id: 4,
     path: "/Digital menu",
     title: "Windev",
-
   },
 ];
 

@@ -1,18 +1,18 @@
 import React from "react";
 import Navbar from "./components/Navbar/Navbar";
-import Home from "./components/Home/Home";
+import About from "./components/About/About";
 import Contact from "./components/Contact/Contact";
 import Skills from "./components/Skills/Skills";
 import Projects from "./components/Projects/Projects";
-import Presentation from "./components/Presentation/Presentation";
+import Hero from "./components/Hero/Hero";
 import Services from "./components/Services/Services";
 
 const App = () => {
   return (
     <div>
       <Navbar />
-      <Presentation />
-      <Home />
+      <Hero />
+      <About />
       <Skills />
       <Services />
       <Projects />

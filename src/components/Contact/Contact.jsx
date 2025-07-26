@@ -1,13 +1,13 @@
 import React from "react";
 import { MdConnectWithoutContact } from "react-icons/md";
 import { formItem } from "../Data/Data";
-import Title from "../Title/Title";
+import Title from "../Utilities/Title";
 
 const Contact = () => {
   const inputItem = formItem.filter((item) => item.categorie === "input");
   const areaItem = formItem.filter((item) => item.categorie === "textarea");
   return (
-    <div name="contact" className="w-full min-h-screen ">
+    <div name="contact" className="w-full h-[125vh] bg-six ">
       <div className="flex flex-col p-4 max-w-screen-lg mx-auto h-full  ">
         <Title
           icon={<MdConnectWithoutContact size={40} className="text-white" />}
@@ -22,7 +22,7 @@ const Contact = () => {
           <form
             action="https://getform.io/f/c32b25bc-8fbe-4a27-b89c-9bea5bcf16be"
             method="POST"
-            className="flex flex-col w-full md:w-1/2 justify-center mt-5 gap-4"
+            className="flex flex-col w-full md:w-1/2 justify-center mt-12 gap-4"
           >
             {inputItem.map((item, id) => {
               return (
@@ -32,7 +32,7 @@ const Contact = () => {
                   name={item.name}
                   autoComplete="off"
                   placeholder={item.placeholder}
-                  className="p-2 bg-transparent border-b-2 border-b-gray-400  text-gray placeholder-gray focus:outline-none"
+                  className="p-2 bg-transparent border border-black rounded-md text-gray placeholder-gray focus:outline-none"
                 />
               );
             })}
@@ -49,7 +49,7 @@ const Contact = () => {
               );
             })}
 
-            <button className="text-white bg-primary px-6 py-3 my-8 mx-auto flex items-center rounded-md hover:scale-110 duration-300">
+            <button className=" bg-black text-white px-6 py-3 my-8 mx-auto flex items-center rounded-md hover:scale-110 duration-300">
               Contact me
             </button>
           </form>

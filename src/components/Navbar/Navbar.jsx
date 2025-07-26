@@ -2,6 +2,8 @@ import React, { useState, useEffect } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
 import { Link } from "react-scroll";
 import { Navlink } from "../Data/Data";
+import bars from "../../assets/bars.svg";
+import times from "../../assets/times.svg";
 
 const Navbar = () => {
   const [show, setShow] = useState(false);
@@ -15,11 +17,11 @@ const Navbar = () => {
 
     if (scrollY > threshold) {
       setBgColor(" bg-slate-100 ");
-/*       setTxtColor("text-white")
+      /*       setTxtColor("text-white")
       setLogoColor("text-white") */
     } else {
       setBgColor("bg-transparent");
-/*       setTxtColor("text-black")
+      /*       setTxtColor("text-black")
       setLogoColor("bg-gradient-to-r") */
     }
   };
@@ -37,7 +39,9 @@ const Navbar = () => {
       className={`flex justify-between items-center w-full h-20 text-white px-4 md:px-20 ${bgColor} from-purple-500 to-purple-300  fixed z-10`}
     >
       <div>
-        <h1 className={`font-extrabold text-transparent text-4xl ml-2 md:text-5xl bg-clip-text  from-yellow-500 to-four ${logoColor} `}>
+        <h1
+          className={`font-extrabold text-4xl ml-2 md:text-5xl text-four `}
+        >
           CM
         </h1>
       </div>
@@ -56,12 +60,21 @@ const Navbar = () => {
           );
         })}
       </ul>
+      <button className="hidden md:flex border border-black text-black  px-2 md:px-4 py-2 rounded-md hover:scale-105 duration-200">
+        <Link to="contact" smooth duration={500}>
+          Contact
+        </Link>
+      </button>
 
       <div
         onClick={() => setShow(!show)}
         className="cursor-pointer pr-4 z-10 text-gray-500 md:hidden"
       >
-        {show ? <FaTimes size={30} /> : <FaBars size={30} />}
+        {show ? (
+          <img src={times} alt="Close Menu" />
+        ) : (
+          <img src={bars} alt="Open Menu" />
+        )}
       </div>
       {show && (
         <ul className="flex flex-col justify-center items-center absolute top-0 left-0 w-full h-screen bg-gradient-to-b from-purple-800 via-purple-300 to-orange-300 text-white/80">
@@ -84,12 +97,6 @@ const Navbar = () => {
           })}
         </ul>
       )}
-      <button className="hidden bg-gradient-to-r from-four to-yellow-500 px-6 py-3 rounded-md  lg:block text-orange-900 text-bold duration-200 hover:scale-105 ">
-        {" "}
-        <Link to="contact" smooth duration={500}>
-          Contact
-        </Link>
-      </button>
     </div>
   );
 };
