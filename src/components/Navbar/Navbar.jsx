@@ -1,9 +1,8 @@
 import React, { useState, useEffect } from "react";
-import { FaBars, FaTimes } from "react-icons/fa";
 import { Link } from "react-scroll";
 import { Navlink } from "../Data/Data";
-import bars from "../../assets/bars.svg";
-import times from "../../assets/times.svg";
+import bars from "../../assets/Icons/bars.svg";
+import times from "../../assets/Icons/times.svg";
 
 const Navbar = () => {
   const [show, setShow] = useState(false);
@@ -36,7 +35,7 @@ const Navbar = () => {
   return (
     <div
       onScroll={handleScroll}
-      className={`flex justify-between items-center w-full h-20 text-white px-4 md:px-20 ${bgColor} from-purple-500 to-purple-300  fixed z-10`}
+      className={`flex justify-between items-center w-full h-20 text-white px-4 md:px-20 ${bgColor} from-purple-500 to-purple-300  fixed z-50`}
     >
       <div>
         <h1

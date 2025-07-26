@@ -1,6 +1,6 @@
 import React from "react";
 import { MdConnectWithoutContact } from "react-icons/md";
-import { formItem } from "../Data/Data";
+import { formItem, links } from "../Data/Data";
 import Title from "../Utilities/Title";
 
 const Contact = () => {
@@ -17,12 +17,31 @@ const Contact = () => {
 
         <div
           data-aos="fade-up"
-          className=" flex justify-center items-center  rounded-lg"
+          className=" flex flex-col justify-center items-center gap-4 rounded-lg"
         >
+          <div className="flex">
+            <ul className="flex flex-row ">
+              {links.map(({ id, mobile, href, download }) => {
+                return (
+                  <li key={id} className="mr-5 hover:scale-105 duration-200">
+                    <a
+                      href={href ? href : "/"}
+                      download={download}
+                      target="_blank"
+                      rel="noreferrer"
+                      className="flex justify-between items-center w-full "
+                    >
+                      {mobile}
+                    </a>
+                  </li>
+                );
+              })}
+            </ul>
+          </div>
           <form
             action="https://getform.io/f/c32b25bc-8fbe-4a27-b89c-9bea5bcf16be"
             method="POST"
-            className="flex flex-col w-full md:w-1/2 justify-center mt-12 gap-4"
+            className="flex flex-col w-full md:w-1/2 justify-center gap-4"
           >
             {inputItem.map((item, id) => {
               return (

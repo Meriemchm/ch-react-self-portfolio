@@ -1,6 +1,7 @@
 import React from "react";
 import { links } from "../Data/Data";
-import Bubble from "../../assets/bubble.svg";
+import Bubble from "../../assets/Icons/bubble.svg";
+
 import { Link } from "react-scroll";
 
 const Presentation = () => {

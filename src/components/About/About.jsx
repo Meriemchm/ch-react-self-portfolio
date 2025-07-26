@@ -1,23 +1,23 @@
 import React from "react";
 import { links } from "../Data/Data";
 import personal from "../../assets/personal.jpg";
+import vector from "../../assets/Icons/vector.svg";
+import circle from "../../assets/Icons/circle.svg";
 const Home = () => {
   return (
     <div
       name="about"
-      className="flex md:h-screen w-full bg-second py-4 "
+      className="flex md:h-screen w-full bg-second py-4 relative"
     >
       <div
         data-aos="fade-up"
-        className="max-w-screen-lg mx-auto flex flex-col-reverse justify-center items-center h-full px-8 my-16 gap-5 md:gap-0 md:flex-row md:my-0"
+        className="max-w-screen-lg mx-auto flex flex-col-reverse justify-center items-center h-full px-8 my-16 gap-5 md:gap-0 md:flex-row md:my-0 z-10"
       >
         <div className="flex flex-col md:justify-center h-full">
           <h2 className="text-4xl md:text-7xl font-bold  font-playfair">
-           I'm a {/* {" font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 to-four"} */}
-            <span className="">
-              Software{" "}
-            </span>{" "}
-            Developer
+            I'm a{" "}
+            {/* {" font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 to-four"} */}
+            <span className="">Software </span> Developer
           </h2>
           <p className=" py-4 max-w-md md:text-base text-sm">
             Chami Meriem here, As a frontend developer, I excel in using
@@ -51,14 +51,21 @@ const Home = () => {
             </ul>
           </div>
         </div>
-        <div className="bg-white rounded-full  md:flex items-center justify-center p-2 hover:scale-105 duration-200">
-          <img
-            src={personal}
-            alt="MyProfile"
-            className="rounded-full mx-auto md:w-[28rem] h-auto md:h-[22rem] object-cover "
-          />
+        <div className="relative  hover:scale-105 duration-200">
+          {/* Vecteur en dessous */}
+          <img src={circle} className="absolute top-5 -left-2 z-10" />
+
+          {/* Ton image en dessus */}
+          <div className=" rounded-full z-20 md:flex items-center justify-center p-2">
+            <img
+              src={personal}
+              alt="MyProfile"
+              className="rounded-full mx-auto md:w-[28rem] h-auto md:h-[22rem] object-cover"
+            />
+          </div>
         </div>
       </div>
+      <img src={vector} alt="vector" className="absolute bottom-0 z-0" />
     </div>
   );
 };
