@@ -3,8 +3,8 @@ import { menuItem } from "../Data/Data";
 import Project from "../Projects/Project";
 import Animation from "../../assets/Icons/Animation.gif";
 
-const activetext = "text-four";
-const activebg = "border-four";
+const activetext = "text-primary";
+const activebg = "border-primary";
 
 const SideBar = () => {
   const [activeTab, setActiveTab] = useState(0);
