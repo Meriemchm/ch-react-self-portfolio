@@ -76,12 +76,12 @@ const Navbar = () => {
         )}
       </div>
       {show && (
-        <ul className="flex flex-col justify-center items-center absolute top-0 left-0 w-full h-screen bg-gradient-to-b from-purple-800 via-purple-300 to-orange-300 text-white/80">
+        <ul className="flex flex-col justify-center items-center absolute top-0 left-0 w-full min-h-screen bg-third text-black">
           {Navlink.map(({ id, link }) => {
             return (
               <li
                 key={id}
-                className="px-4 py-4 cursor-pointer text-4xl text-white/80 hover:scale-105 duration-200 capitalize"
+                className="px-4 py-4 cursor-pointer text-4xl  hover:scale-105 duration-200 capitalize"
               >
                 <Link
                   to={link}

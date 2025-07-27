@@ -22,16 +22,16 @@ const Skills = () => {
         />
 
         {/* wrapper en row */}
-        <div className="flex flex-col md:flex-row items-center justify-between mt-8 gap-8">
+        <div className="flex flex-col md:flex-row  mt-8 gap-8">
           {/* Colonne des skills */}
-          <div className="flex-1">
+          <div className="flex flex-col justify-start">
             <Skill Title="Programming languages" data={frontTechs} />
             <Skill Title="Framework" data={designTechs} />
             <Skill Title="Others" data={othersTechs} />
           </div>
 
           {/* Image à droite */}
-          <div className="flex-1 flex justify-center items-start ">
+          <div className="flex justify-center items-start ">
             <img
               src={design}
               alt="design illustration"
