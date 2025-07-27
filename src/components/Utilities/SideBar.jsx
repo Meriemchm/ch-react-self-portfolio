@@ -19,7 +19,7 @@ const SideBar = () => {
   };
   return (
     <>
-      <div className="md:w-1/3 md:h-full  overflow-x-scroll md:overflow-y-scroll md:overflow-x-hidden ">
+      <div className="md:w-1/3 md:h-full w-full overflow-x-scroll md:overflow-y-scroll md:overflow-x-hidden ">
         <div className="flex flex-row md:flex-col gap-5 p-2 select-none ">
           {menuItem.map((item, id) => {
             return (

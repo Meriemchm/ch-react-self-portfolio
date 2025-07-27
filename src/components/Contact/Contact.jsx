@@ -8,10 +8,10 @@ const Contact = () => {
   const inputItem = formItem.filter((item) => item.categorie === "input");
   const areaItem = formItem.filter((item) => item.categorie === "textarea");
   return (
-    <div name="contact" className="w-full h-[125vh] lg:h-screen bg-six py-8">
+    <div name="contact" className="w-full h-[125vh] lg:h-screen bg-six py-8 relative">
       <div className="flex flex-col md:flex-row p-4 max-w-screen-lg mx-auto h-full">
         {/* first */}
-        <div className="flex flex-col">
+        <div className="flex flex-col" data-aos="fade-up">
           <Title
             icon={<MdConnectWithoutContact size={40} className="text-white" />}
             title="Contact"
@@ -46,7 +46,7 @@ const Contact = () => {
           <img
             src={flower}
             alt="flower-icon"
-            className="absolute bottom-0 right-0 z-0 opacity-80 pointer-events-none"
+            className="hidden md:flex absolute bottom-0 right-0 z-0 opacity-80 pointer-events-none"
           />
 
           {/* Formulaire au-dessus */}
@@ -83,6 +83,12 @@ const Contact = () => {
           </form>
         </div>
       </div>
+      {/* Fleur en arrière-plan */}
+      <img
+        src={flower}
+        alt="flower-icon"
+        className=" md:hidden flex absolute bottom-0 right-0 z-0 opacity-80 pointer-events-none"
+      />
     </div>
   );
 };

@@ -14,7 +14,7 @@ const Projects = () => {
           description="There is my work."
         />
         {/*projects*/}
-        <div className="flex flex-col md:flex-row">
+        <div className="flex flex-col md:flex-row w-full">
           <SideBar />
         </div>
 

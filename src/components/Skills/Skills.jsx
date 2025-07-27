@@ -31,7 +31,7 @@ const Skills = () => {
           </div>
 
           {/* Image à droite */}
-          <div className="flex justify-center items-start ">
+          <div className="flex justify-center items-start " data-aos="fade-up" >
             <img
               src={design}
               alt="design illustration"

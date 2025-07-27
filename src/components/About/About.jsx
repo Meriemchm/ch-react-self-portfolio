@@ -15,7 +15,7 @@ const Home = () => {
         data-aos="fade-up"
         className="max-w-screen-lg mx-auto flex flex-col-reverse justify-center items-center h-full px-8 my-16 gap-5 md:gap-0 md:flex-row md:my-0 z-10"
       >
-        <div className="flex flex-col md:justify-center h-full" data-aos="fade-right">
+        <div className="flex flex-col md:justify-center h-full" data-aos="fade-up">
           <h2 className="text-4xl md:text-7xl font-bold  font-playfair">
             I'm a{" "}
             {/* {" font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 to-four"} */}
@@ -53,7 +53,7 @@ const Home = () => {
             </ul>
           </div>
         </div>
-        <div className="relative  hover:scale-105 duration-200" data-aos="fade-left">
+        <div className="relative  hover:scale-105 duration-200" data-aos="fade-up">
           {/* Vecteur en dessous */}
           <img
             src={circle}

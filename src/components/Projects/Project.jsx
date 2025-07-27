@@ -15,7 +15,7 @@ const Project = ({ title }) => {
             <img
               src={src}
               alt="Image-project"
-              className="rounded-md h-full w-full object-cover"
+              className="rounded-md h-full w-full object-cover border border-gray-300 shadow-sm"
             />
 
             <div className="flex flex-col items-start justify-start text-gray-800 mx-5 my-4 ">

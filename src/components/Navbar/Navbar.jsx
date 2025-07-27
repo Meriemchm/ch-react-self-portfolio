@@ -39,7 +39,7 @@ const Navbar = () => {
     >
       <div>
         <h1
-          className={`font-extrabold text-4xl ml-2 md:text-5xl text-four `}
+          className={`font-extrabold text-4xl ml-2 md:text-5xl text-transparent bg-clip-text bg-gradient-to-r from-primary via-primary/50 to-black `}
         >
           CM
         </h1>
