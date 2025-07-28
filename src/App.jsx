@@ -6,6 +6,7 @@ import Skills from "./components/Skills/Skills";
 import Projects from "./components/Projects/Projects";
 import Hero from "./components/Hero/Hero";
 import Services from "./components/Services/Services";
+import ChatBubble from "./components/ChatBot/ChatBubble";
 
 const App = () => {
   return (
@@ -17,6 +18,7 @@ const App = () => {
       <Services />
       <Projects />
       <Contact />
+      <ChatBubble />
     </div>
   );
 };

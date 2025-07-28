@@ -61,6 +61,7 @@ const Contact = () => {
                 type={item.type}
                 name={item.name}
                 autoComplete="off"
+                required
                 placeholder={item.placeholder}
                 className="p-3 bg-transparent border border-gray-400 rounded-md text-gray-800 placeholder-gray-500 focus:outline-none"
               />
@@ -73,6 +74,7 @@ const Contact = () => {
                 placeholder={item.placeholder}
                 rows="8"
                 autoComplete="off"
+                required
                 className="resize-none p-3 bg-transparent border border-gray-400 rounded-md text-gray-800 placeholder-gray-500 focus:outline-none"
               ></textarea>
             ))}

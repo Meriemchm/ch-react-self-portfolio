@@ -35,7 +35,7 @@ const Skills = () => {
             <img
               src={design}
               alt="design illustration"
-              className=""
+              className="hover:scale-105 duration-200"
             />
           </div>
         </div>
