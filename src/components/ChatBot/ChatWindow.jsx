@@ -3,31 +3,56 @@ import rebot from "../../assets/Icons/rebot.gif";
 import rebot_img from "../../assets/Icons/rebot.svg";
 import times from "../../assets/Icons/times.svg";
 import check from "../../assets/Icons/check.svg";
+import Waiting from "../../assets/Icons/Waiting.gif";
 
 const ChatWindow = ({ onClose }) => {
   const [input, setInput] = useState("");
   const [messages, setMessages] = useState([
     {
       from: "bot",
-      text: `👋 Bonjour ! Je suis l’assistant IA de Meriem Chami. Je suis là pour vous renseigner sur ses projets, compétences et parcours. Posez-moi vos questions !`,
+      text: `👋 Hello! I'm Meriem Chami's AI assistant. I'm here to provide information about her projects, skills, and background. Feel free to ask me any questions!`,
     },
   ]);
 
-  const handleSend = () => {
+  const handleSend = async () => {
     if (!input.trim()) return;
 
-    // Ajouter le message utilisateur
-    const newMessages = [...messages, { from: "user", text: input.trim() }];
-    setMessages(newMessages);
+    const newUserMessage = { from: "user", text: input.trim() };
+    setMessages((prev) => [...prev, newUserMessage]);
+    const question = input.trim();
     setInput("");
 
-    // Tu pourras ajouter ici l’appel API OpenAI et une réponse simulée
-    setTimeout(() => {
-       setMessages((prev) => [
-         ...prev,
-         { from: "bot", text: "Merci pour votre question ! Je vous réponds bientôt." },
-       ]);
-     }, 1000);
+    // Message temporaire "..." pendant que l'IA réfléchit
+    setMessages((prev) => [
+      ...prev,
+      { from: "bot", text: <img src={Waiting} alt="waiting" className="w-8 h-4"/>
+       },
+    ]);
+
+    try {
+      const res = await fetch(`${import.meta.env.VITE_API_URL}/ask`, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ question }),
+      });
+
+      const data = await res.json();
+
+      // Retire le message "..." et ajoute la vraie réponse
+      setMessages((prev) => [
+        ...prev.slice(0, -1), // enlève "..."
+        { from: "bot", text: data.answer },
+      ]);
+    } catch (error) {
+      console.error("Erreur :", error);
+      setMessages((prev) => [
+        ...prev.slice(0, -1),
+        {
+          from: "bot",
+          text: "An error occurred. Please try again later.",
+        },
+      ]);
+    }
   };
 
   return (
