@@ -30,7 +30,7 @@ const ChatWindow = ({ onClose }) => {
     ]);
 
     try {
-      const res = await fetch(`${import.meta.env.VITE_API_URL}/ask`, {
+      const res = await fetch(`${import.meta.env.VITE_API_URL}/api/ask`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ question }),
