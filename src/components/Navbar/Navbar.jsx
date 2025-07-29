@@ -38,11 +38,7 @@ const Navbar = () => {
       className={`flex justify-between items-center w-full h-20 text-white px-4 md:px-20 ${bgColor} from-purple-500 to-purple-300  fixed z-50`}
     >
       <div>
-        <h1
-          className={`font-extrabold text-4xl ml-2 md:text-5xl text-transparent bg-clip-text bg-gradient-to-r from-primary via-primary/50 to-black `}
-        >
-          CM
-        </h1>
+        <img src="icon.png" alt="icon" className="h-16 w-22" />
       </div>
 
       <ul className="hidden md:flex ">

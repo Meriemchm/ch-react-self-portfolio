@@ -1,6 +1,6 @@
 import React from "react";
 import { links } from "../Data/Data";
-import personal from "../../assets/personal.jpg";
+import personal from "../../assets/Images/personal.jpg";
 import vector from "../../assets/Icons/vector.svg";
 import circle from "../../assets/Icons/circle.svg";
 import plus from "../../assets/Icons/plus.svg";

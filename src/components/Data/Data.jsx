@@ -1,16 +1,17 @@
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { HiOutlineMail } from "react-icons/hi";
-import { BsFillPersonLinesFill } from "react-icons/bs";
 import { SiTailwindcss } from "react-icons/si";
 import { FaReact, FaFigma } from "react-icons/fa";
 import { BiLogoGit, BiPodcast } from "react-icons/bi";
-import { MdPersonalVideo } from "react-icons/md";
-import portfolio from "../../assets/portfolio.jpg";
+import portfolio from "../../assets/Images/portfolio.jpg";
 import { CgWebsite } from "react-icons/cg";
 import { IoQrCodeOutline } from "react-icons/io5";
 import { MdOutlineQueryStats } from "react-icons/md";
 import { PiAppWindowLight } from "react-icons/pi";
-import rameem from "../../assets/rameem.jpg";
+import rameem from "../../assets/Images/rameem.jpg";
+import Soktech from "../../assets/Images/Soktech.png";
+import windev from "../../assets/Images/1.png";
+import DigitalMenu from "../../assets/Images/digital-menu.png";
 import { IoLogoPython } from "react-icons/io5";
 import { IoLogoJavascript } from "react-icons/io";
 import { TbBrandFiverr } from "react-icons/tb";
@@ -190,7 +191,7 @@ export const projects = [
   },
   {
     id: 2,
-    src: "Soktech.png",
+    src: Soktech,
     title: "Soktech",
     description:
       "This is a unfinished e-commerce project website to publish services or request a service. I was responsible for the design and frontend development with React js and Css , while my teammate, handled the backend development with Laravel and MySQL is used as the database, running on XAMPP in a local environment.",
@@ -209,7 +210,7 @@ export const projects = [
 
   {
     id: 4,
-    src: "digital-menu.png",
+    src: DigitalMenu,
     title: "Digital menu",
     description:
       "A responsive digital menu custom-built with React and Tailwind CSS, featuring a QR code for easy access . (you can access the website with the Qr code on the picture)",
@@ -219,7 +220,7 @@ export const projects = [
   },
   {
     id: 5,
-    src: "1.png",
+    src: windev,
     title: "Windev",
     description:
       "A cafeteria management software, developed with WinDev, features two main interfaces: one for the admin and one for the cashier. ",
