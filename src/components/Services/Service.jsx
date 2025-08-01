@@ -22,7 +22,7 @@ const Service = ({ data, Title }) => {
                   {src}
                 </div>
               </div>
-              <p className={`py-8  font-bold text-md text-start ${textStyle}`}>
+              <p className={`py-8  font-bold text-sm md:text-base text-start ${textStyle}`}>
                 {title}
               </p>
             </div>

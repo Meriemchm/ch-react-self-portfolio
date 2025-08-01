@@ -7,53 +7,53 @@ import flower from "../../assets/Icons/flower.svg";
 const Contact = () => {
   const inputItem = formItem.filter((item) => item.categorie === "input");
   const areaItem = formItem.filter((item) => item.categorie === "textarea");
+
   return (
-    <div name="contact" className="w-full h-[125vh] lg:h-screen bg-six py-8 relative">
-      <div className="flex flex-col md:flex-row p-4 max-w-screen-lg mx-auto h-full">
-        {/* first */}
-        <div className="flex flex-col" data-aos="fade-up">
+    <div name="contact" className="w-full h-full bg-six py-8 relative">
+      <div className="flex flex-col md:flex-row p-4 max-w-screen-lg mx-auto h-full w-full">
+        {/* first section */}
+        <div className="flex flex-col md:w-1/2" data-aos="fade-up">
           <Title
             icon={<MdConnectWithoutContact size={40} className="text-white" />}
             title="Contact"
             description="You can Contact me here."
           />
-          <div className="flex">
-            <ul className="flex flex-row ">
-              {links.map(({ id, mobile, href, download }) => {
-                return (
-                  <li key={id} className="mr-5 hover:scale-105 duration-200">
-                    <a
-                      href={href ? href : "/"}
-                      download={download}
-                      target="_blank"
-                      rel="noreferrer"
-                      className="flex justify-between items-center w-full "
-                    >
-                      {mobile}
-                    </a>
-                  </li>
-                );
-              })}
+          <div className="mt-4">
+            <ul className="flex flex-wrap gap-4">
+              {links.map(({ id, mobile, href, download }) => (
+                <li key={id} className="hover:scale-105 duration-200">
+                  <a
+                    href={href ? href : "/"}
+                    download={download}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="flex items-center text-sm sm:text-base "
+                  >
+                    {mobile}
+                  </a>
+                </li>
+              ))}
             </ul>
           </div>
         </div>
-        {/* second */}
+
+        {/* second section */}
         <div
           data-aos="fade-up"
-          className="flex md:flex-1 mt-12 md:mt-0 flex-col justify-center items-center gap-4 relative"
+          className="flex md:flex-1 mt-8 md:mt-0 flex-col justify-center items-center gap-4 relative"
         >
-          {/* Fleur en arrière-plan */}
+          {/* Fleur arrière-plan */}
           <img
             src={flower}
             alt="flower-icon"
             className="hidden md:flex absolute bottom-0 right-0 z-0 opacity-80 pointer-events-none"
           />
 
-          {/* Formulaire au-dessus */}
+          {/* Form */}
           <form
             action="https://getform.io/f/c32b25bc-8fbe-4a27-b89c-9bea5bcf16be"
             method="POST"
-            className="relative z-10 flex flex-col w-full md:w-1/2 gap-4 justify-end"
+            className="relative z-10 flex flex-col w-full gap-4"
           >
             {inputItem.map((item, id) => (
               <input
@@ -85,11 +85,12 @@ const Contact = () => {
           </form>
         </div>
       </div>
-      {/* Fleur en arrière-plan */}
+
+      {/* Fleur mobile */}
       <img
         src={flower}
         alt="flower-icon"
-        className=" md:hidden flex absolute bottom-0 right-0 z-0 opacity-80 pointer-events-none"
+        className="md:hidden flex absolute bottom-0 right-0 z-0 opacity-80 pointer-events-none"
       />
     </div>
   );

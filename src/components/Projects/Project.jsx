@@ -3,7 +3,6 @@ import { projects } from "../Data/Data";
 import { AiFillGithub } from "react-icons/ai";
 import { CiShare1 } from "react-icons/ci";
 
-
 const Project = ({ title }) => {
   const project = projects.filter((item) => item.title === title);
   return (
@@ -15,19 +14,24 @@ const Project = ({ title }) => {
             <img
               src={src}
               alt="Image-project"
-              className="rounded-md h-full w-full object-cover border border-gray-300 shadow-sm"
+              className="rounded-md h-full w-full object-cover border border-gray-300 shadow-sm duration-200 hover:scale-105"
             />
 
             <div className="flex flex-col items-start justify-start text-gray-800 mx-5 my-4 ">
               <h2 className="text-bold text-xl font-bold capitalize py-2">
                 {title}
               </h2>
-              <p className="text-sm md:text-base">{description}</p>
+              <p dangerouslySetInnerHTML={{ __html: description }} />
             </div>
             <div className="flex text-gray-500 ">
               {hcode !== "" ? (
                 <button className="flex w1/2 px-6 py-3 m-4 duration-200 hover:scale-105">
-                  <a href={hcode} target="_blank" rel="noreferrer" className="font-bold md:text-lg text-base">
+                  <a
+                    href={hcode}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="font-bold md:text-lg text-base"
+                  >
                     Code
                   </a>
                   <span>
@@ -38,7 +42,12 @@ const Project = ({ title }) => {
 
               {hdemo !== "" ? (
                 <button className="flex w1/2 px-6 py-3 m-4 duration-200 hover:scale-105 border rounded-md">
-                  <a href={hdemo} target="_blank" rel="noreferrer" className="font-bold md:text-lg text-base">
+                  <a
+                    href={hdemo}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="font-bold md:text-lg text-base"
+                  >
                     Demo
                   </a>
                   <span>

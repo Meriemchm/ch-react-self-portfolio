@@ -52,8 +52,6 @@ const Presentation = () => {
                   3000,
                   "Web Developer",
                   2000,
-                  "Problem Solver",
-                  2000,
                 ]}
                 cursor={true}
                 wrapper="span"

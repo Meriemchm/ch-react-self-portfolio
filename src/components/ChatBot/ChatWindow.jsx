@@ -56,7 +56,7 @@ const ChatWindow = ({ onClose }) => {
   };
 
   return (
-    <div className="bg-white shadow-xl rounded-lg w-full h-96 md:w-96 md:h-[35rem] flex flex-col overflow-hidden border m-2 md:m-0">
+    <div className="bg-white shadow-xl rounded-lg w-full h-[30rem] md:w-96 md:h-[35rem] flex flex-col overflow-hidden border m-2 md:m-0">
       {/* Header */}
       <div className="bg-second flex items-center justify-between px-4 py-2">
         <div className="flex items-center gap-2">

@@ -11,7 +11,7 @@ import { PiAppWindowLight } from "react-icons/pi";
 import rameem from "../../assets/Images/rameem.jpg";
 import Soktech from "../../assets/Images/Soktech.png";
 import windev from "../../assets/Images/1.png";
-import DigitalMenu from "../../assets/Images/digital-menu.png";
+import DigitalMenu from "../../assets/Images/menu_1.png";
 import { IoLogoPython } from "react-icons/io5";
 import { IoLogoJavascript } from "react-icons/io";
 import { TbBrandFiverr } from "react-icons/tb";
@@ -63,7 +63,7 @@ export const techs = [
   },
   {
     id: 6,
-    child: "",
+    child: <p className="text-white font-bold md:text-3xl text-2xl">W</p>,
     title: "Windev",
     style: "bg-black",
     type: "others",
@@ -141,10 +141,10 @@ export const Navlink = [
     id: 4,
     link: "projects",
   },
-  // {
-  //   id: 5,
-  //   link: "contact",
-  // },
+  {
+     id: 5,
+     link: "contact",
+ },
 ];
 
 export const services = [
@@ -194,7 +194,7 @@ export const projects = [
     src: Soktech,
     title: "Soktech",
     description:
-      "This is a unfinished e-commerce project website to publish services or request a service. I was responsible for the design and frontend development with React js and Css , while my teammate, handled the backend development with Laravel and MySQL is used as the database, running on XAMPP in a local environment.",
+      `This is a unfinished e-commerce project website to publish services or request a service. I was responsible for the design and frontend development with <span class="font-bold">React js</span> and <span class="font-bold">Css</span> , while my teammate, handled the backend development with <span class="font-bold">Laravel</span> and <span class="font-bold">MySQL</span> is used as the database, running on XAMPP in a local environment.`,
     hcode: "https://github.com/Meriemchm/Soktech",
     hdemo: "",
   },
@@ -202,9 +202,14 @@ export const projects = [
     id: 3,
     src: rameem,
     title: "rameem",
-    description:
-      "Welcome to the Psychologists Website, designed and developed for a client. This project utilizes React and Tailwind CSS for the frontend, providing a modern and responsive user interface. The backend is powered by Express, although I wasn't directly involved in the backend development.",
-    hcode: "",
+    description: `
+      Welcome to the Psychologists Website, a project developed for a client. 
+      The frontend was built using <span class="font-bold">React</span> and 
+      <span class="font-bold">Tailwind CSS</span>, offering a clean and responsive user experience. 
+      While the backend is powered by <span class="font-bold">Express</span>, 
+      my contribution focused primarily on the frontend interface and user interaction.
+    `,
+    hcode: "https://github.com/Meriemchm/chm_psychology_react_website",
     hdemo: "https://rameemm.netlify.app",
   },
 
@@ -215,8 +220,8 @@ export const projects = [
     description:
       "A responsive digital menu custom-built with React and Tailwind CSS, featuring a QR code for easy access . (you can access the website with the Qr code on the picture)",
     hcode:
-      "https://github.com/Meriemchm/chm_QR_Code_Digital_Menu_React_Website_two",
-    hdemo: "https://coffee-shopp-menu.netlify.app",
+      "https://github.com/Meriemchm/chm_QR_Code_Menu_React_Website",
+    hdemo: "https://havana-menu.netlify.app",
   },
   {
     id: 5,
@@ -227,6 +232,7 @@ export const projects = [
     hdemo: "",
     hcode: "https://github.com/Meriemchm/chm_cafeteria_-stock_manager",
   },
+  
 ];
 
 export const menuItem = [

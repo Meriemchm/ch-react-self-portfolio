@@ -15,7 +15,7 @@ const Navbar = () => {
     const threshold = 100;
 
     if (scrollY > threshold) {
-      setBgColor(" bg-slate-100 ");
+      setBgColor(" bg-six ");
       /*       setTxtColor("text-white")
       setLogoColor("text-white") */
     } else {
@@ -37,21 +37,23 @@ const Navbar = () => {
       onScroll={handleScroll}
       className={`flex justify-between items-center w-full h-20 text-white px-4 md:px-20 ${bgColor} from-purple-500 to-purple-300  fixed z-50`}
     >
-      <div>
-        <img src="icon.png" alt="icon" className="h-16 w-22" />
-      </div>
+      <Link to="home" smooth duration={500}>
+        <img src="icon.png" alt="icon" className="h-16 w-22 cursor-pointer" />
+      </Link>
 
       <ul className="hidden md:flex ">
         {Navlink.map(({ id, link }) => {
           return (
-            <li
-              key={id}
-              className={`px-8 cursor-pointer font-light text-lg  hover:scale-105 duration-200 capitalize ${txtColor} `}
-            >
-              <Link to={link} smooth duration={500}>
-                {link}
-              </Link>
-            </li>
+            link !== "contact" && (
+              <li
+                key={id}
+                className={`px-8 cursor-pointer font-light text-lg hover:scale-105 duration-200 capitalize ${txtColor}`}
+              >
+                <Link to={link} smooth duration={500}>
+                  {link}
+                </Link>
+              </li>
+            )
           );
         })}
       </ul>
@@ -77,7 +79,7 @@ const Navbar = () => {
             return (
               <li
                 key={id}
-                className="px-4 py-4 cursor-pointer text-4xl  hover:scale-105 duration-200 capitalize"
+                className="px-4 py-4 cursor-pointer text-base  hover:scale-105 duration-200 capitalize"
               >
                 <Link
                   to={link}
