@@ -79,7 +79,7 @@ const Navbar = () => {
             return (
               <li
                 key={id}
-                className="px-4 py-4 cursor-pointer text-base  hover:scale-105 duration-200 capitalize"
+                className="px-4 py-4 cursor-pointer text-lg  hover:scale-105 duration-200 capitalize"
               >
                 <Link
                   to={link}
