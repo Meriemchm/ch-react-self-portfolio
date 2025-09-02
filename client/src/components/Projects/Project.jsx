@@ -15,7 +15,7 @@ const Project = ({ title }) => {
       {project.map(
         ({ id, src, title, description,techs, hcode, hdemo, subRepos, subDemo }) => {
           return (
-            <div data-aos="fade-up" key={id} className="flex flex-col  mx-5">
+            <div data-aos="fade-up" key={id} className="flex flex-col  md:mx-5">
               {/* Image */}
 
               <ImageCarousel images={src} />

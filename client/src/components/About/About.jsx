@@ -20,12 +20,12 @@ const Home = () => {
           data-aos="fade-up"
         >
           <h2 className="text-4xl md:text-7xl font-bold  font-playfair">
-            I'm a{" "}
+            I'm{" "}
             {/* {" font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 to-four"} */}
-            <span className="">Software </span> Developer
+            <span className="">Chami </span> Meriem
           </h2>
           <p className=" py-4 max-w-md md:text-base text-sm">
-            Chami Meriem here, Passionate about computer science, I hold a
+            Passionate about computer science, I hold a
             Master’s degree in Artificial Intelligence. I enjoy designing
             efficient and innovative solutions. Thanks to my freelance
             experience, I am autonomous, detail-oriented, and fully committed to
@@ -62,7 +62,7 @@ const Home = () => {
           </div>
         </div>
         <div
-          className="relative  hover:scale-105 duration-200"
+          className="relative  hover:scale-105 duration-20"
           data-aos="fade-up"
         >
           {/* Vecteur en dessous */}
@@ -77,7 +77,7 @@ const Home = () => {
             <img
               src={personal}
               alt="MyProfile"
-              className="rounded-full mx-auto md:w-[28rem] h-auto md:h-[22rem] object-cover"
+              className="rounded-full mx-auto h-auto  object-cover"
             />
           </div>
           <img src={plus} alt="icon-plus" className="absolute top-0 right-0" />
