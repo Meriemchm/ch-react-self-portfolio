@@ -4,18 +4,27 @@ import { SiTailwindcss } from "react-icons/si";
 import { FaReact, FaFigma } from "react-icons/fa";
 import { BiLogoGit } from "react-icons/bi";
 import { TbBrandNextjs } from "react-icons/tb";
-import portfolio from "../../assets/Images/portfolio.jpg";
+import portfolio from "../assets/Images/portfolio.jpg";
+import blackBg from "../assets/Images/back_bg.jpg";
 import { CgWebsite } from "react-icons/cg";
 import { IoQrCodeOutline } from "react-icons/io5";
 import { MdOutlineQueryStats } from "react-icons/md";
 import { PiAppWindowLight } from "react-icons/pi";
-import rameem from "../../assets/Images/rameem.jpg";
-import Soktech from "../../assets/Images/Soktech.png";
-import windev from "../../assets/Images/1.png";
-import DigitalMenu from "../../assets/Images/menu_1.png";
+import rameem from "../assets/Images/rameem.jpg";
+import rameemDash from "../assets/Images/rameem-dash.png";
+import rameemHistoryDash from "../assets/Images/rameem-history-dash.png";
+import Soktech from "../assets/Images/Soktech.png";
+import windev from "../assets/Images/1.png";
+import AdminDashLight from "../assets/Images/admin-dash-light.png";
+import AdminDash from "../assets/Images/admin-dash.png";
+import HomeStore from "../assets/Images/home-store-page.png";
+import DigitalMenu from "../assets/Images/menu_1.png";
 import { IoLogoPython } from "react-icons/io5";
 import { IoLogoJavascript } from "react-icons/io";
 import { TbBrandFiverr } from "react-icons/tb";
+import { SiMongodb } from "react-icons/si";
+import { SiMysql } from "react-icons/si";
+import { SiExpress } from "react-icons/si";
 
 export const techs = [
   {
@@ -70,11 +79,32 @@ export const techs = [
     type: "others",
   },
   {
-    id: 2,
+    id: 8,
     child: <TbBrandNextjs className="text-white" size={45} />,
     title: "Next js",
     style: "bg-black",
     type: "framework",
+  },
+  {
+    id: 9,
+    child: <SiMysql className="text-white" size={45} />,
+    title: "MySQL",
+    style: "bg-black",
+    type: "database",
+  },
+  {
+    id: 10,
+    child: <SiMongodb className="text-white" size={45} />,
+    title: "MongoDB",
+    style: "bg-black",
+    type: "database",
+  },
+  {
+    id: 11,
+    child: <SiExpress className="text-white" size={45} />,
+    title: "Express",
+    style: "bg-black",
+    type: "backend",
   },
 ];
 
@@ -192,52 +222,76 @@ export const services = [
 
 export const projects = [
   {
-    id: 1,
-    src: portfolio,
-    title: "portfolio",
+    id: 0,
+    src: [AdminDash, AdminDashLight, HomeStore],
+    title: "e-commerce",
     description:
-      "Welcome to a personal portfolio website, crafted with the powerful combination of React and Tailwind CSS. This project showcases skills, projects, and experiences in a clean, modern, and responsive design made by me.",
-    hcode: "https://github.com/Meriemchm/chm_react_ramzey_chabira_portfolio",
-    hdemo: "https://ramzeychabira.netlify.app",
+      "I developed a full-stack e-commerce platform with Next.js, featuring two sides: an Admin Dashboard for managing products, inventory, and orders, and a Storefront for customers to browse and purchase items. The database layer runs on MySQL containerized with Docker, making the development environment portable, consistent, and easy to deploy.",
+    techs: ["Next.js", "MySQL", "Prisma ORM", "Docker"],
+    hcode: "https://github.com/ton-repo",
+    hdemo: "",
+    subRepos: [
+      {
+        label: "Dashboard",
+        link: "https://github.com/Meriemchm/chm_admin_e-commerce_website",
+      },
+      {
+        label: "Store",
+        link: "https://github.com/Meriemchm/chm_e-commerce_store_website",
+      },
+    ],
+    subDemo: [
+      { label: "Dashboard", link: "https://github.com/ton-repo-dashboard" },
+      { label: "Store", link: "https://github.com/ton-repo-store" },
+    ],
   },
+  // {
+  //   id: 1,
+  //   src: [portfolio],
+  //   title: "portfolio",
+  //   description:
+  //     "Welcome to a personal portfolio website, crafted with a clean, modern, and responsive design made by me.",
+  //   techs: ["React", "Tailwind CSS"],
+  //   hcode: "https://github.com/Meriemchm/chm_react_ramzey_chabira_portfolio",
+  //   hdemo: "https://ramzeychabira.netlify.app",
+  // },
   {
     id: 2,
-    src: Soktech,
-    title: "Soktech",
-    description: `This is a unfinished e-commerce project website to publish services or request a service. I was responsible for the design and frontend development with <span class="font-bold">React js</span> and <span class="font-bold">Css</span> , while my teammate, handled the backend development with <span class="font-bold">Laravel</span> and <span class="font-bold">MySQL</span> is used as the database, running on XAMPP in a local environment.`,
+    src: [Soktech],
+    title: "soktech",
+    description:
+      "This is an unfinished e-commerce project website to publish services or request a service. I was responsible for the design and frontend development, while my teammate handled the backend development. The database runs on XAMPP in a local environment.",
+    techs: ["React", "CSS", "Laravel", "MySQL"],
     hcode: "https://github.com/Meriemchm/Soktech",
     hdemo: "",
   },
   {
     id: 3,
-    src: rameem,
+    src: [rameem, rameemDash, rameemHistoryDash],
     title: "rameem",
-    description: `
-      Welcome to the Psychologists Website, a project developed for a client. 
-      The frontend was built using <span class="font-bold">React</span> and 
-      <span class="font-bold">Tailwind CSS</span>, offering a clean and responsive user experience. 
-      While the backend is powered by <span class="font-bold">Express</span>, 
-      my contribution focused primarily on the frontend interface and user interaction.
-    `,
+    description:
+      "Welcome to the Psychologists Website, a client project where I contributed mainly to the frontend interface and user interaction, while also setting up the API integration. The platform features a dual-dashboard system: one for patients to book appointments and another for doctors to manage them.",
+    techs: ["React", "Tailwind CSS", "Express"],
     hcode: "https://github.com/Meriemchm/chm_psychology_react_website",
     hdemo: "https://rameemm.netlify.app",
   },
-
   {
     id: 4,
-    src: DigitalMenu,
-    title: "Digital menu",
+    src: [DigitalMenu],
+    title: "digital menu",
     description:
-      "A responsive digital menu custom-built with React and Tailwind CSS, featuring a QR code for easy access . (you can access the website with the Qr code on the picture)",
+      "A responsive digital menu custom-built with a QR code for easy access. (you can access the website with the QR code on the picture)",
+    techs: ["React", "Tailwind CSS"],
     hcode: "https://github.com/Meriemchm/chm_QR_Code_Menu_React_Website",
     hdemo: "https://havana-menu.netlify.app",
   },
   {
     id: 5,
-    src: windev,
-    title: "Windev",
+    src: [windev],
+    title: "windev",
     description:
-      "A cafeteria management software, developed with WinDev, features two main interfaces: one for the admin and one for the cashier. ",
+      "A cafeteria management software, featuring two main interfaces: one for the admin and one for the cashier.",
+    techs: ["WinDev"],
     hdemo: "",
     hcode: "https://github.com/Meriemchm/chm_cafeteria_-stock_manager",
   },
@@ -245,33 +299,32 @@ export const projects = [
 
 export const menuItem = [
   {
-    id: 3,
-    path: "/rameem",
+    id: 0,
+    title: "e-commerce",
+  },
+  {
+    id: 1,
     title: "rameem",
   },
 
   {
     id: 2,
-    path: "/Soktech",
-    title: "Soktech",
+    title: "soktech",
   },
 
-  {
-    id: 1,
-    path: "/portfolio",
-    title: "portfolio",
-  },
-
-  {
-    id: 4,
-    path: "/Digital menu",
-    title: "Digital menu",
-  },
+  // {
+  //   id: 3,
+  //   title: "portfolio",
+  // },
 
   {
     id: 4,
-    path: "/Digital menu",
-    title: "Windev",
+    title: "digital menu",
+  },
+
+  {
+    id: 5,
+    title: "windev",
   },
 ];
 

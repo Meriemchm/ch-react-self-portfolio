@@ -1,5 +1,5 @@
 import React from "react";
-import { links } from "../Data/Data";
+import { links } from "../../Data/Data";
 import personal from "../../assets/Images/personal.jpg";
 import vector from "../../assets/Icons/vector.svg";
 import circle from "../../assets/Icons/circle.svg";

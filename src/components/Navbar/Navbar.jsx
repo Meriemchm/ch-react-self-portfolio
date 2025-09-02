@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-scroll";
-import { Navlink } from "../Data/Data";
+import { Navlink } from "../../Data/Data";
 import bars from "../../assets/Icons/bars.svg";
 import times from "../../assets/Icons/times.svg";
 

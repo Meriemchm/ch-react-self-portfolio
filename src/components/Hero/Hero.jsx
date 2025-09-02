@@ -1,5 +1,5 @@
 import React from "react";
-import { links } from "../Data/Data";
+import { links } from "../../Data/Data";
 import Bubble from "../../assets/Icons/bubble.svg";
 import { TypeAnimation } from "react-type-animation";
 

@@ -1,7 +1,7 @@
 import React from "react";
 import Service from "./Service";
 import { MdOutlineWorkOutline } from "react-icons/md";
-import { services } from "../Data/Data";
+import { services } from "../../Data/Data";
 import Title from "../Utilities/Title";
 const Services = () => {
   return (
