@@ -7,6 +7,7 @@ import Waiting from "../../assets/Icons/Waiting.gif";
 
 const ChatWindow = ({ onClose }) => {
   const [input, setInput] = useState("");
+  const [isLoading, setIsLoading] = useState(false);
   const [messages, setMessages] = useState([
     {
       from: "bot",
@@ -21,12 +22,15 @@ const ChatWindow = ({ onClose }) => {
     setMessages((prev) => [...prev, newUserMessage]);
     const question = input.trim();
     setInput("");
+    setIsLoading(true);
 
-    // Message temporaire "..." 
+    // Message temporaire "..."
     setMessages((prev) => [
       ...prev,
-      { from: "bot", text: <img src={Waiting} alt="waiting" className="w-8 h-4"/>
-       },
+      {
+        from: "bot",
+        text: <img src={Waiting} alt="waiting" className="w-8 h-4" />,
+      },
     ]);
 
     try {
@@ -38,7 +42,7 @@ const ChatWindow = ({ onClose }) => {
 
       const data = await res.json();
 
-      // Retire le message "..." 
+      // Retire le message "..."
       setMessages((prev) => [
         ...prev.slice(0, -1), // enlève "..."
         { from: "bot", text: data.answer },
@@ -52,6 +56,8 @@ const ChatWindow = ({ onClose }) => {
           text: "An error occurred. Please try again later.",
         },
       ]);
+    } finally {
+      setIsLoading(false); 
     }
   };
 
@@ -108,6 +114,7 @@ const ChatWindow = ({ onClose }) => {
           className="flex-1 border rounded-full px-4 py-2 text-sm focus:outline-none"
           value={input}
           onChange={(e) => setInput(e.target.value)}
+          disabled={isLoading} 
           onKeyDown={(e) => e.key === "Enter" && handleSend()}
         />
         <button
