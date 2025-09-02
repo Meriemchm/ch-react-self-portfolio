@@ -23,6 +23,14 @@ const HoverButton = ({
       >
         <span className="font-bold md:text-lg text-base">{label}</span>
         <span className="ml-2">{icon}</span>
+      {!subLinks && link && (
+        <a
+          href={link}
+          target="_blank"
+          rel="noreferrer"
+          className="absolute inset-0 "
+        ></a>
+      )}
       </button>
 
       {/* Dropdown si plusieurs liens */}
@@ -40,14 +48,6 @@ const HoverButton = ({
             </a>
           ))}
         </div>
-      )}
-      {!subLinks && link && (
-        <a
-          href={link}
-          target="_blank"
-          rel="noreferrer"
-          className="absolute inset-0"
-        ></a>
       )}
     </div>
   );
