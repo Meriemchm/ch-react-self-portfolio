@@ -50,7 +50,7 @@ const Presentation = () => {
                   2000,
                   "Master's Degree in Artificial Intelligence",
                   3000,
-                  "Web Developer",
+                  "Full-Stack Developer",
                   2000,
                 ]}
                 cursor={true}
@@ -59,9 +59,10 @@ const Presentation = () => {
                 repeat={Infinity}
                 className="text-black"
               />
-              
             </p>
-            <p className="font-playfair text-black text-2xl md:text-4xl text-right">Here</p>
+            <p className="font-playfair text-black text-2xl md:text-4xl text-right">
+              Here
+            </p>
           </div>
           <div className="flex gap-4 text-sm md:text-base">
             <Link to="contact" smooth={true} duration={500}>
