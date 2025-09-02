@@ -1,6 +1,6 @@
 import React from "react";
 import { MdConnectWithoutContact } from "react-icons/md";
-import { formItem, links } from "../Data/Data";
+import { formItem, links } from "../../Data/Data";
 import Title from "../Utilities/Title";
 import flower from "../../assets/Icons/flower.svg";
 
@@ -42,12 +42,12 @@ const Contact = () => {
           data-aos="fade-up"
           className="flex md:flex-1 mt-8 md:mt-0 flex-col justify-center items-center gap-4 relative"
         >
-          {/* Fleur arrière-plan */}
+          {/* Fleur arrière-plan
           <img
             src={flower}
             alt="flower-icon"
             className="hidden md:flex absolute bottom-0 right-0 z-0 opacity-80 pointer-events-none"
-          />
+          /> */}
 
           {/* Form */}
           <form
@@ -87,11 +87,11 @@ const Contact = () => {
       </div>
 
       {/* Fleur mobile */}
-      <img
+      {/* <img
         src={flower}
         alt="flower-icon"
         className="md:hidden flex absolute bottom-0 right-0 z-0 opacity-80 pointer-events-none"
-      />
+      /> */}
     </div>
   );
 };
