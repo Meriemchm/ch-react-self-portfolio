@@ -4,7 +4,6 @@ const dotenv = require('dotenv')
 const fetch = (...args) => import('node-fetch').then(({default: fetch}) => fetch(...args));
 
 
-
 dotenv.config();
 
 const app = express();
@@ -73,6 +72,12 @@ app.post("/api/ask", async (req, res) => {
     res.status(500).json({ error: "Erreur lors de la requête à OpenRouter." });
   }
 });
+
+
+app.get("/ping", (req, res) => {
+  res.json({ status: "ok" });
+});
+
 
 app.listen(5000, () => {
   console.log("Serveur lancé sur http://localhost:5000");

@@ -22,7 +22,7 @@ const ChatWindow = ({ onClose }) => {
     const question = input.trim();
     setInput("");
 
-    // Message temporaire "..." pendant que l'IA réfléchit
+    // Message temporaire "..." 
     setMessages((prev) => [
       ...prev,
       { from: "bot", text: <img src={Waiting} alt="waiting" className="w-8 h-4"/>
@@ -38,7 +38,7 @@ const ChatWindow = ({ onClose }) => {
 
       const data = await res.json();
 
-      // Retire le message "..." et ajoute la vraie réponse
+      // Retire le message "..." 
       setMessages((prev) => [
         ...prev.slice(0, -1), // enlève "..."
         { from: "bot", text: data.answer },
