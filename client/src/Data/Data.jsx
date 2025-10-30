@@ -230,7 +230,7 @@ export const projects = [
       "Welcome to the Dental Clinic website, a modern, responsive platform designed to showcase a dental services and connect with patients easily.",
     techs: ["Next js", "Tailwind css", "Email js"],
     hcode: "https://github.com/Meriemchm/chm_dental_clinic_website",
-    hdemo: "",
+    hdemo: "https://chm-dental-clinic-website.vercel.app",
   },
   {
     id: 0,
