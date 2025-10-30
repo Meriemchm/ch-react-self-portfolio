@@ -19,6 +19,7 @@ import AdminDashLight from "../assets/Images/admin-dash-light.png";
 import AdminDash from "../assets/Images/admin-dash.png";
 import HomeStore from "../assets/Images/home-store-page.png";
 import DigitalMenu from "../assets/Images/menu_1.png";
+import DentalClinic from "../assets/Images/dental-clinic.png";
 import { IoLogoPython } from "react-icons/io5";
 import { IoLogoJavascript } from "react-icons/io";
 import { TbBrandFiverr } from "react-icons/tb";
@@ -222,6 +223,16 @@ export const services = [
 
 export const projects = [
   {
+    id: 6,
+    src: [DentalClinic],
+    title: "dental clinic",
+    description:
+      "Welcome to the Dental Clinic website, a modern, responsive platform designed to showcase a dental services and connect with patients easily.",
+    techs: ["Next js", "Tailwind css", "Email js"],
+    hcode: "https://github.com/Meriemchm/chm_dental_clinic_website",
+    hdemo: "",
+  },
+  {
     id: 0,
     src: [AdminDash, AdminDashLight, HomeStore],
     title: "e-commerce",
@@ -298,6 +309,7 @@ export const projects = [
 ];
 
 export const menuItem = [
+  { id: 6, title: "dental clinic" },
   {
     id: 0,
     title: "e-commerce",
