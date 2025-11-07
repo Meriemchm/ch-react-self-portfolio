@@ -332,7 +332,7 @@ export const menuItem = [
 
   {
     id: 2,
-    title: "soktech",
+    title: "bloombox",
   },
 
   // {
