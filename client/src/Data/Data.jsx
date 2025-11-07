@@ -20,6 +20,7 @@ import AdminDash from "../assets/Images/admin-dash.png";
 import HomeStore from "../assets/Images/home-store-page.png";
 import DigitalMenu from "../assets/Images/menu_1.png";
 import DentalClinic from "../assets/Images/dental-clinic.png";
+import BloomBox from "../assets/Images/bloombox.png";
 import { IoLogoPython } from "react-icons/io5";
 import { IoLogoJavascript } from "react-icons/io";
 import { TbBrandFiverr } from "react-icons/tb";
@@ -268,14 +269,24 @@ export const projects = [
   // },
   {
     id: 2,
-    src: [Soktech],
-    title: "soktech",
+    src: [BloomBox],
+    title: "bloombox",
     description:
-      "This is an unfinished e-commerce project website to publish services or request a service. I was responsible for the design and frontend development, while my teammate handled the backend development. The database runs on XAMPP in a local environment.",
-    techs: ["React", "CSS", "Laravel", "MySQL"],
-    hcode: "https://github.com/Meriemchm/Soktech",
-    hdemo: "",
+      "A next-gen flower delivery service. Bloombox offers a subscription-based model for fresh, hand-picked flowers delivered to your doorstep weekly. Customize your box, skip weeks, or cancel anytime with ease through our user-friendly platform. Designed by REZK-KALLAH Amina and developed by me.",
+    techs: ["Next.js", "Tailwind CSS"],
+    hcode: "https://github.com/Meriemchm/chm_nextjs_bloombox_website",
+    hdemo: "https://bloombox-website.vercel.app",
   },
+  //   {
+  //   id: 2,
+  //   src: [Soktech],
+  //   title: "soktech",
+  //   description:
+  //     "This is an unfinished e-commerce project website to publish services or request a service. I was responsible for the design and frontend development, while my teammate handled the backend development. The database runs on XAMPP in a local environment.",
+  //   techs: ["React", "CSS", "Laravel", "MySQL"],
+  //   hcode: "https://github.com/Meriemchm/Soktech",
+  //   hdemo: "",
+  // },
   {
     id: 3,
     src: [rameem, rameemDash, rameemHistoryDash],
