@@ -297,26 +297,26 @@ export const projects = [
     hcode: "https://github.com/Meriemchm/chm_psychology_react_website",
     hdemo: "https://rameemm.netlify.app",
   },
-  {
-    id: 4,
-    src: [DigitalMenu],
-    title: "digital menu",
-    description:
-      "A responsive digital menu custom-built with a QR code for easy access. (you can access the website with the QR code on the picture)",
-    techs: ["React", "Tailwind CSS"],
-    hcode: "https://github.com/Meriemchm/chm_QR_Code_Menu_React_Website",
-    hdemo: "https://havana-menu.netlify.app",
-  },
-  {
-    id: 5,
-    src: [windev],
-    title: "windev",
-    description:
-      "A cafeteria management software, featuring two main interfaces: one for the admin and one for the cashier.",
-    techs: ["WinDev"],
-    hdemo: "",
-    hcode: "https://github.com/Meriemchm/chm_cafeteria_-stock_manager",
-  },
+  // {
+  //   id: 4,
+  //   src: [DigitalMenu],
+  //   title: "digital menu",
+  //   description:
+  //     "A responsive digital menu custom-built with a QR code for easy access. (you can access the website with the QR code on the picture)",
+  //   techs: ["React", "Tailwind CSS"],
+  //   hcode: "https://github.com/Meriemchm/chm_QR_Code_Menu_React_Website",
+  //   hdemo: "https://havana-menu.netlify.app",
+  // },
+  // {
+  //   id: 5,
+  //   src: [windev],
+  //   title: "windev",
+  //   description:
+  //     "A cafeteria management software, featuring two main interfaces: one for the admin and one for the cashier.",
+  //   techs: ["WinDev"],
+  //   hdemo: "",
+  //   hcode: "https://github.com/Meriemchm/chm_cafeteria_-stock_manager",
+  // },
 ];
 
 export const menuItem = [
@@ -340,15 +340,15 @@ export const menuItem = [
   //   title: "portfolio",
   // },
 
-  {
-    id: 4,
-    title: "digital menu",
-  },
+  // {
+  //   id: 4,
+  //   title: "digital menu",
+  // },
 
-  {
-    id: 5,
-    title: "windev",
-  },
+  // {
+  //   id: 5,
+  //   title: "windev",
+  // },
 ];
 
 export const formItem = [
