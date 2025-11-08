@@ -61,6 +61,11 @@
   background: #804bf2;
 }
 
+.force-scrollbar {
+  overflow-x: scroll;
+  -webkit-overflow-scrolling: touch; /* scroll smooth sur iOS */
+}
+
 canvas {
   height: 100vh !important;
   width: 100%;
