@@ -1,8 +1,6 @@
-import React from "react";
 import { MdConnectWithoutContact } from "react-icons/md";
 import { formItem, links } from "../../Data/Data";
 import Title from "../Utilities/Title";
-import flower from "../../assets/Icons/flower.svg";
 
 const Contact = () => {
   const inputItem = formItem.filter((item) => item.categorie === "input");
@@ -86,12 +84,6 @@ const Contact = () => {
         </div>
       </div>
 
-      {/* Fleur mobile */}
-      {/* <img
-        src={flower}
-        alt="flower-icon"
-        className="md:hidden flex absolute bottom-0 right-0 z-0 opacity-80 pointer-events-none"
-      /> */}
     </div>
   );
 };

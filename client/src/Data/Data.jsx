@@ -135,7 +135,7 @@ export const links = [
       <>
         <TbBrandFiverr
           size={30}
-          className="bg-third rounded-full p-1 shadow-md"
+          className="bg-third rounded-full p-1 shadow-sm"
         />
       </>
     ),

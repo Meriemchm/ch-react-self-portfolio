@@ -19,7 +19,7 @@ const SideBar = () => {
   };
   return (
     <div className="md:grid md:grid-cols-4">
-      <div className=" md:h-full w-full overflow-x-scroll scrollbar-thin scrollbar-thumb-gray-400 md:overflow-y-scroll md:overflow-x-hidden ">
+      <div className=" md:h-full w-full overflow-x-scroll scrollbar scrollbar-thumb-gray-500 scrollbar-track-gray-200 md:overflow-y-scroll md:overflow-x-hidden ">
         <div className="flex flex-row md:flex-col gap-5 p-2 select-none ">
           {menuItem.map((item, id) => {
             return (
