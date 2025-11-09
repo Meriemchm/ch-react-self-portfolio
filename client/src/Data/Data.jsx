@@ -228,8 +228,8 @@ export const projects = [
     src: [DentalClinic],
     title: "dental clinic",
     description:
-      "Welcome to the Dental Clinic website, a modern, responsive platform designed to showcase a dental services and connect with patients easily.",
-    techs: ["Next js", "Tailwind css", "Email js"],
+      "Welcome to the Dental Clinic website, a modern and responsive platform designed to showcase dental services, connect with patients easily through an integrated contact system using EmailJS, and manage appointments efficiently via the Google Calendar API.",
+    techs: ["Next js", "Tailwind css", "Email js", "Google API"],
     hcode: "https://github.com/Meriemchm/chm_dental_clinic_website",
     hdemo: "https://chm-dental-clinic-website.vercel.app",
   },
