@@ -57,7 +57,7 @@ const Navbar = () => {
           );
         })}
       </ul>
-      <button className="hidden md:flex border border-black text-black  px-2 md:px-4 py-2 rounded-md hover:scale-105 duration-200">
+      <button className="hidden md:flex bg-black  px-2 md:px-4 py-2 rounded-md hover:scale-105 duration-200">
         <Link to="contact" smooth duration={500}>
           Contact
         </Link>
