@@ -35,7 +35,7 @@ const Navbar = () => {
   return (
     <div
       onScroll={handleScroll}
-      className={`flex justify-between items-center w-full h-20 text-white px-4 md:px-20 ${bgColor} from-purple-500 to-purple-300  fixed z-50`}
+      className={`flex justify-between items-center w-full h-20 text-white px-4 md:px-20 my-2 rounded-full ${bgColor} fixed z-50`}
     >
       <Link to="home" smooth duration={500}>
         <img src="icon.png" alt="icon" className="h-16 w-22 cursor-pointer" />
@@ -74,7 +74,7 @@ const Navbar = () => {
         )}
       </div>
       {show && (
-        <ul className="flex flex-col justify-center items-center absolute top-0 left-0 w-full min-h-screen bg-second text-black">
+        <ul className="flex flex-col justify-center items-center absolute -top-2 left-0 w-full min-h-screen bg-second text-black">
           {Navlink.map(({ id, link }) => {
             return (
               <li
