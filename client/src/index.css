@@ -33,6 +33,16 @@
     background-color: rgb(145, 88, 231);
   }
 }
+  @keyframes floatRotate {
+    0%   { transform: translateX(0px)  }
+    100% { transform: translateX(30%) }
+  }
+  .svg-float-rotate {
+    display: inline-block; 
+    animation: floatRotate 1.5s linear infinite;
+    transform-box: fill-box;
+    transform-origin: center;
+  }
 
 .color-change {
   background-color: rgb(145, 88, 231);

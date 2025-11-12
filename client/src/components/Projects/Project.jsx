@@ -11,7 +11,7 @@ const Project = ({ title }) => {
   const [openMenu, setOpenMenu] = useState(null);
 
   return (
-    <div className="text-black md:ml-10 md:mt-0 mt-10 w-full h-full">
+    <div className="text-black md:ml-10 md:mt-0 mt-4 w-full h-full">
       {project.map(
         ({ id, src, title, description,techs, hcode, hdemo, subRepos, subDemo }) => {
           return (
