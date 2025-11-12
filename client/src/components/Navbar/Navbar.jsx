@@ -74,7 +74,7 @@ const Navbar = () => {
         )}
       </div>
       {show && (
-        <ul className="flex flex-col justify-center items-center absolute top-0 left-0 w-full min-h-screen bg-third text-black">
+        <ul className="flex flex-col justify-center items-center absolute top-0 left-0 w-full min-h-screen bg-second text-black">
           {Navlink.map(({ id, link }) => {
             return (
               <li

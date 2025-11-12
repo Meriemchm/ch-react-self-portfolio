@@ -4,8 +4,6 @@ import { SiTailwindcss } from "react-icons/si";
 import { FaReact, FaFigma } from "react-icons/fa";
 import { BiLogoGit } from "react-icons/bi";
 import { TbBrandNextjs } from "react-icons/tb";
-import portfolio from "../assets/Images/portfolio.jpg";
-import blackBg from "../assets/Images/back_bg.jpg";
 import { CgWebsite } from "react-icons/cg";
 import { IoQrCodeOutline } from "react-icons/io5";
 import { MdOutlineQueryStats } from "react-icons/md";
@@ -13,12 +11,15 @@ import { PiAppWindowLight } from "react-icons/pi";
 import rameem from "../assets/Images/rameem.jpg";
 import rameemDash from "../assets/Images/rameem-dash.png";
 import rameemHistoryDash from "../assets/Images/rameem-history-dash.png";
-import Soktech from "../assets/Images/Soktech.png";
-import windev from "../assets/Images/1.png";
+//import portfolio from "../assets/Images/portfolio.jpg";
+//import blackBg from "../assets/Images/back_bg.jpg";
+// import Soktech from "../assets/Images/Soktech.png";
+// import windev from "../assets/Images/1.png";
+// import DigitalMenu from "../assets/Images/menu_1.png";
+import bookTracker from "../assets/Images/book-tracker.png";
 import AdminDashLight from "../assets/Images/admin-dash-light.png";
 import AdminDash from "../assets/Images/admin-dash.png";
 import HomeStore from "../assets/Images/home-store-page.png";
-import DigitalMenu from "../assets/Images/menu_1.png";
 import DentalClinic from "../assets/Images/dental-clinic.png";
 import BloomBox from "../assets/Images/bloombox.png";
 import { IoLogoPython } from "react-icons/io5";
@@ -272,7 +273,7 @@ export const projects = [
     src: [BloomBox],
     title: "bloombox",
     description:
-      "A next-gen flower delivery service. Bloombox offers a subscription-based model for fresh, hand-picked flowers delivered to your doorstep weekly. Customize your box, skip weeks, or cancel anytime with ease through our user-friendly platform. Designed by REZK-KALLAH Amina and developed by me.",
+      "A next-gen flower delivery service. Bloombox offers a subscription-based model for fresh, hand-picked flowers delivered to your doorstep weekly. Customize your box, skip weeks, or cancel anytime with ease through our user-friendly platform. Designed by <span class='font-bold'>REZK-KALLAH Amina</span> and developed by <span class='font-bold'>me</span>.",
     techs: ["Next.js", "Tailwind CSS"],
     hcode: "https://github.com/Meriemchm/chm_nextjs_bloombox_website",
     hdemo: "https://bloombox-website.vercel.app",
@@ -288,7 +289,7 @@ export const projects = [
   //   hdemo: "",
   // },
   {
-    id: 3,
+    id: 1,
     src: [rameem, rameemDash, rameemHistoryDash],
     title: "rameem",
     description:
@@ -296,6 +297,33 @@ export const projects = [
     techs: ["React", "Tailwind CSS", "Express"],
     hcode: "https://github.com/Meriemchm/chm_psychology_react_website",
     hdemo: "https://rameemm.netlify.app",
+  },
+  {
+    id: 3,
+    src: [bookTracker],
+    title: "book tracker API",
+    description:
+      "A flexible and reusable backend for a Book Tracking and Note Sharing App, where users can create accounts, track their books, write notes, and choose whether to make their notes private or public to share with others.",
+    techs: ["Express.js", "Prisma ORM ", "PostgreSQL", "Docker"],
+    hcode: "https://github.com/ton-repo",
+    hdemo: "",
+    subRepos: [
+      {
+        label: "Backend API",
+        link: "https://github.com/Meriemchm/chm_book_tracker_backend",
+      },
+      // {
+      //   label: "Store",
+      //   link: "https://github.com/Meriemchm/chm_e-commerce_store_website",
+      // },
+    ],
+    subDemo: [
+      {
+        label: "Backend API",
+        link: "https://github.com/Meriemchm/chm_book_tracker_backend",
+      },
+      // { label: "Store", link: "https://github.com/ton-repo-store" },
+    ],
   },
   // {
   //   id: 4,
@@ -324,6 +352,10 @@ export const menuItem = [
   {
     id: 0,
     title: "e-commerce",
+  },
+  {
+    id: 3,
+    title: "book tracker API",
   },
   {
     id: 1,

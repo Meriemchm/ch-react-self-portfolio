@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { menuItem } from "../../Data/Data";
 import Project from "../Projects/Project";
 import Animation from "../../assets/Icons/Animation.gif";
+import arrow from "../../assets/Icons/arrow.gif";
 
 const activetext = "text-primary";
 const activebg = "border-primary";
@@ -50,6 +51,7 @@ const SideBar = () => {
           })}
         </div>
       </div>
+      <img className=" justify-self-end w-16 h-16 md:hidden" src={arrow} alt="arrow" />
 
       <div className="md:col-span-3">
         <Project title={menuItem[activeTab].title} />
