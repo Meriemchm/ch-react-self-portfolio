@@ -303,7 +303,7 @@ export const projects = [
   {
     id: 7,
     src: [Flexflow, Flexflow_2],
-    title: "flewflow",
+    title: "flexflow",
     description:
       "A calming and modern yoga website designed to promote balance, mindfulness, and well-being. The layout is intuitive, the visuals are seren, and inner harmony.",
     techs: ["Next.js", "Tailwind CSS"],
@@ -365,6 +365,7 @@ export const menuItem = [
     id: 0,
     title: "e-commerce",
   },
+  { id: 7, title: "flexflow" },
   {
     id: 3,
     title: "book tracker API",
