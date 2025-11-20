@@ -22,6 +22,8 @@ import AdminDash from "../assets/Images/admin-dash.png";
 import HomeStore from "../assets/Images/home-store-page.png";
 import DentalClinic from "../assets/Images/dental-clinic.png";
 import BloomBox from "../assets/Images/bloombox.png";
+import Flexflow from "../assets/Images/flexflow.png";
+import Flexflow_2 from "../assets/Images/flexflow_2.png";
 import { IoLogoPython } from "react-icons/io5";
 import { IoLogoJavascript } from "react-icons/io";
 import { TbBrandFiverr } from "react-icons/tb";
@@ -297,6 +299,16 @@ export const projects = [
     techs: ["React", "Tailwind CSS", "Express"],
     hcode: "https://github.com/Meriemchm/chm_psychology_react_website",
     hdemo: "https://rameemm.netlify.app",
+  },
+  {
+    id: 7,
+    src: [Flexflow, Flexflow_2],
+    title: "flewflow",
+    description:
+      "A calming and modern yoga website designed to promote balance, mindfulness, and well-being. The layout is intuitive, the visuals are seren, and inner harmony.",
+    techs: ["Next.js", "Tailwind CSS"],
+    hcode: "https://github.com/Meriemchm/chm_yoga_website",
+    hdemo: "https://flexxflow.vercel.app",
   },
   {
     id: 3,
