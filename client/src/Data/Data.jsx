@@ -20,7 +20,10 @@ import bookTracker from "../assets/Images/book-tracker.png";
 import AdminDashLight from "../assets/Images/admin-dash-light.png";
 import AdminDash from "../assets/Images/admin-dash.png";
 import HomeStore from "../assets/Images/home-store-page.png";
-import DentalClinic from "../assets/Images/dental-clinic.png";
+import DentalClinic from "../assets/Images/dental_clinic_1.png";
+import DentalClinic_2 from "../assets/Images/dental_clinic_2.png";
+import portfolio_1 from "../assets/Images/ad-1.png";
+import portfolio_2 from "../assets/Images/ad-2.png";
 import BloomBox from "../assets/Images/bloombox.png";
 import Flexflow from "../assets/Images/flexflow.png";
 import Flexflow_2 from "../assets/Images/flexflow_2.png";
@@ -227,8 +230,8 @@ export const services = [
 
 export const projects = [
   {
-    id: 6,
-    src: [DentalClinic],
+    id: 1,
+    src: [DentalClinic, DentalClinic_2],
     title: "dental clinic",
     description:
       "Welcome to the Dental Clinic website, a modern and responsive platform designed to showcase dental services, connect with patients easily through an integrated contact system using EmailJS, and manage appointments efficiently via the Google Calendar API.",
@@ -237,7 +240,7 @@ export const projects = [
     hdemo: "https://chm-dental-clinic-website.vercel.app",
   },
   {
-    id: 0,
+    id: 2,
     src: [AdminDash, AdminDashLight, HomeStore],
     title: "e-commerce",
     description:
@@ -270,16 +273,16 @@ export const projects = [
   //   hcode: "https://github.com/Meriemchm/chm_react_ramzey_chabira_portfolio",
   //   hdemo: "https://ramzeychabira.netlify.app",
   // },
-  {
-    id: 2,
-    src: [BloomBox],
-    title: "bloombox",
-    description:
-      "A next-gen flower delivery service. Bloombox offers a subscription-based model for fresh, hand-picked flowers delivered to your doorstep weekly. Customize your box, skip weeks, or cancel anytime with ease through our user-friendly platform. Designed by <span class='font-bold'>REZK-KALLAH Amina</span> and developed by <span class='font-bold'>me</span>.",
-    techs: ["Next.js", "Tailwind CSS"],
-    hcode: "https://github.com/Meriemchm/chm_nextjs_bloombox_website",
-    hdemo: "https://bloombox-website.vercel.app",
-  },
+  // {
+  //   id: 3,
+  //   src: [BloomBox],
+  //   title: "bloombox",
+  //   description:
+  //     "A next-gen flower delivery service. Bloombox offers a subscription-based model for fresh, hand-picked flowers delivered to your doorstep weekly. Customize your box, skip weeks, or cancel anytime with ease through our user-friendly platform. Designed by <span class='font-bold'>REZK-KALLAH Amina</span> and developed by <span class='font-bold'>me</span>.",
+  //   techs: ["Next.js", "Tailwind CSS"],
+  //   hcode: "https://github.com/Meriemchm/chm_nextjs_bloombox_website",
+  //   hdemo: "https://bloombox-website.vercel.app",
+  // },
   //   {
   //   id: 2,
   //   src: [Soktech],
@@ -291,7 +294,7 @@ export const projects = [
   //   hdemo: "",
   // },
   {
-    id: 1,
+    id: 4,
     src: [rameem, rameemDash, rameemHistoryDash],
     title: "rameem",
     description:
@@ -301,7 +304,7 @@ export const projects = [
     hdemo: "https://rameemm.netlify.app",
   },
   {
-    id: 7,
+    id: 5,
     src: [Flexflow, Flexflow_2],
     title: "flexflow",
     description:
@@ -311,7 +314,7 @@ export const projects = [
     hdemo: "https://flexxflow.vercel.app",
   },
   {
-    id: 3,
+    id: 6,
     src: [bookTracker],
     title: "book tracker API",
     description:
@@ -337,63 +340,44 @@ export const projects = [
       // { label: "Store", link: "https://github.com/ton-repo-store" },
     ],
   },
-  // {
-  //   id: 4,
-  //   src: [DigitalMenu],
-  //   title: "digital menu",
-  //   description:
-  //     "A responsive digital menu custom-built with a QR code for easy access. (you can access the website with the QR code on the picture)",
-  //   techs: ["React", "Tailwind CSS"],
-  //   hcode: "https://github.com/Meriemchm/chm_QR_Code_Menu_React_Website",
-  //   hdemo: "https://havana-menu.netlify.app",
-  // },
-  // {
-  //   id: 5,
-  //   src: [windev],
-  //   title: "windev",
-  //   description:
-  //     "A cafeteria management software, featuring two main interfaces: one for the admin and one for the cashier.",
-  //   techs: ["WinDev"],
-  //   hdemo: "",
-  //   hcode: "https://github.com/Meriemchm/chm_cafeteria_-stock_manager",
-  // },
+  {
+    id: 7,
+    src: [portfolio_1, portfolio_2],
+    title: "A. D | Portfolio",
+    description:
+      "An interactive portfolio for a photographer, featuring smooth animations, custom scrolling, and modern navigation for an immersive user experience.",
+    techs: ["Next.js", "Tailwind CSS", "Gsap", "Frame motion", "lenis scroll"],
+    hcode: "https://github.com/Meriemchm/chm_portfolio_showcase_photographer",
+    hdemo: "https://adportfolio-two.vercel.app",
+  },
+
 ];
 
 export const menuItem = [
-  { id: 6, title: "dental clinic" },
+  { id: 1, title: "dental clinic" },
   {
-    id: 0,
+    id: 2,
     title: "e-commerce",
   },
-  { id: 7, title: "flexflow" },
+  { id: 3, title: "flexflow" },
   {
-    id: 3,
+    id: 4,
     title: "book tracker API",
   },
   {
-    id: 1,
+    id: 5,
+    title: "A. D | Portfolio",
+  },
+  {
+    id: 6,
     title: "rameem",
   },
 
-  {
-    id: 2,
-    title: "bloombox",
-  },
-
   // {
-  //   id: 3,
-  //   title: "portfolio",
+  //   id: 7,
+  //   title: "bloombox",
   // },
 
-  // {
-  //   id: 4,
-  //   title: "digital menu",
-  // },
-
-  // {
-  //   id: 5,
-  //   title: "windev",
-  // },
 ];
 
 export const formItem = [
