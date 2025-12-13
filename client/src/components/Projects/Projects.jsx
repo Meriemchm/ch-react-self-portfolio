@@ -1,7 +1,7 @@
 
 import { GoProjectSymlink } from "react-icons/go";
-import SideBar from "../Utilities/SideBar";
-import Title from "../Utilities/Title";
+import SideBar from "../ui/SideBar";
+import Title from "../ui/Title";
 import { FaGithub } from "react-icons/fa";
 
 const Projects = () => {

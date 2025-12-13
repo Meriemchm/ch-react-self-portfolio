@@ -1,5 +1,5 @@
 import React from "react";
-import { links } from "../../Data/Data";
+import { Links } from "../../Data/Links";
 import personal from "../../assets/Images/personal.jpg";
 import vector from "../../assets/Icons/vector.svg";
 import circle from "../../assets/Icons/circle.svg";
@@ -43,7 +43,7 @@ const Home = () => {
 
           <div className="flex pt-2">
             <ul className="flex flex-row ">
-              {links.map(({ id, mobile, href, download }) => {
+              {Links.map(({ id, mobile, href, download }) => {
                 return (
                   <li key={id} className="mr-5 hover:scale-105 duration-200">
                     <a

@@ -1,8 +1,8 @@
 import React from "react";
-import { links } from "../../Data/Data";
+import { Links } from "../../Data/Links";
 import Bubble from "../../assets/Icons/bubble.svg";
 import { TypeAnimation } from "react-type-animation";
-
+import Button from "../ui/Button";
 import { Link } from "react-scroll";
 
 const Presentation = () => {
@@ -23,7 +23,7 @@ const Presentation = () => {
         <div className="flex flex-col justify-center h-full w-full">
           <div className="flex">
             <ul className="flex flex-row">
-              {links.map(({ id, mobile, href, download }) => (
+              {Links.map(({ id, mobile, href, download }) => (
                 <li key={id} className="mr-5 hover:scale-105 duration-200">
                   <a
                     href={href ? href : "/"}
@@ -66,16 +66,16 @@ const Presentation = () => {
           </div>
           <div className="flex gap-4 text-sm md:text-base">
             <Link to="contact" smooth={true} duration={500}>
-              <button className="border border-second bg-second text-black px-2 text-sm md:text-base md:px-4 py-2 rounded-md hover:scale-105 duration-200">
+              <Button className="border border-second bg-second text-black">
                 Contact me
-              </button>
+              </Button>
             </Link>
 
             {/* Bouton */}
             <Link to="about" smooth={true} duration={500}>
-              <button className="border border-black px-2 md:px-4 py-2 text-sm md:text-base rounded-md hover:scale-105 duration-200">
+              <Button className="border border-black text-black" variant="outline">
                 About me
-              </button>
+              </Button>
             </Link>
           </div>
         </div>

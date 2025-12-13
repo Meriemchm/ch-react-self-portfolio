@@ -1,5 +1,5 @@
-import React, { useState } from "react";
-import { menuItem } from "../../Data/Data";
+import { useState } from "react";
+import { MenuItem } from "../../Data/MenuItem";
 import Project from "../Projects/Project";
 import Animation from "../../assets/Icons/Animation.gif";
 import arrow from "../../assets/Icons/arrow.svg";
@@ -10,19 +10,19 @@ const activebg = "border-primary";
 const SideBar = () => {
   const [activeTab, setActiveTab] = useState(0);
   const [active, setActive] = useState(
-    menuItem.map((item, index) => index === 0)
+    MenuItem.map((item, index) => index === 0)
   );
 
   const handleClick = (index) => {
     setActiveTab(index);
-    const newActive = menuItem.map((item, i) => i === index);
+    const newActive = MenuItem.map((item, i) => i === index);
     setActive(newActive);
   };
   return (
     <div className="md:grid md:grid-cols-4">
       <div className=" md:h-full w-full overflow-x-scroll force-scrollbar md:overflow-y-scroll md:overflow-x-hidden ">
         <div className="flex flex-row md:flex-col gap-5 p-2 select-none ">
-          {menuItem.map((item, id) => {
+          {MenuItem.map((item, id) => {
             return (
               <div key={id} onClick={() => handleClick(id)}>
                 <li
@@ -56,7 +56,7 @@ const SideBar = () => {
         <img className="w-14  svg-float-rotate" src={arrow} alt="arrow" />
       </div>
       <div className="md:col-span-3">
-        <Project title={menuItem[activeTab].title} />
+        <Project title={MenuItem[activeTab].title} />
       </div>
     </div>
   );

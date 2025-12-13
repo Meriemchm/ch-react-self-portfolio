@@ -1,18 +1,17 @@
-import React from "react";
 import { GiSkills } from "react-icons/gi";
 import Skill from "./Skill";
-import { techs } from "../../Data/Data";
-import Title from "../Utilities/Title";
+import { Techs } from "../../Data/Techs";
+import Title from "../ui/Title";
 import design from "../../assets/Icons/design.svg";
 
 const Skills = () => {
-  const programmingTechs = techs.filter(
+  const programmingTechs = Techs.filter(
     (tech) => tech.type === "programming languages"
   );
-  const frameworkTechs = techs.filter((tech) => tech.type === "framework");
-  const databaseTechs = techs.filter((tech) => tech.type === "database");
-  const backendTechs = techs.filter((tech) => tech.type === "backend");
-  const othersTechs = techs.filter((tech) => tech.type === "others");
+  const frameworkTechs = Techs.filter((tech) => tech.type === "framework");
+  const databaseTechs = Techs.filter((tech) => tech.type === "database");
+  const backendTechs = Techs.filter((tech) => tech.type === "backend");
+  const othersTechs = Techs.filter((tech) => tech.type === "others");
 
   return (
     <div name="skills" className="bg-white w-full">

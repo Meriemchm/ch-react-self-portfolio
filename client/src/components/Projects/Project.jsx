@@ -1,19 +1,29 @@
 import React, { useState } from "react";
-import { projects } from "../../Data/Data";
+import { Projects } from "../../Data/Projects";
 import { AiFillGithub } from "react-icons/ai";
 import { CiShare1 } from "react-icons/ci";
-import HoverButton from "../Utilities/HoverButton";
-import ImageCarousel from "../Utilities/ImageCarousel";
-import TechBadges from "../Utilities/TechBadges";
+import HoverButton from "../ui/HoverButton";
+import ImageCarousel from "../ui/ImageCarousel";
+import TechBadges from "../ui/TechBadges";
 
 const Project = ({ title }) => {
-  const project = projects.filter((item) => item.title === title);
+  const project = Projects.filter((item) => item.title === title);
   const [openMenu, setOpenMenu] = useState(null);
 
   return (
     <div className="text-black md:ml-10 md:mt-0 mt-4 w-full h-full">
       {project.map(
-        ({ id, src, title, description,techs, hcode, hdemo, subRepos, subDemo }) => {
+        ({
+          id,
+          src,
+          title,
+          description,
+          techs,
+          hcode,
+          hdemo,
+          subRepos,
+          subDemo,
+        }) => {
           return (
             <div data-aos="fade-up" key={id} className="flex flex-col  md:mx-5">
               {/* Image */}

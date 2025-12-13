@@ -1,14 +1,14 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-scroll";
-import { Navlink } from "../../Data/Data";
+import { Navlink } from "../../Data/Navlink";
 import bars from "../../assets/Icons/bars.svg";
 import times from "../../assets/Icons/times.svg";
+import Button from "../ui/Button";
 
 const Navbar = () => {
   const [show, setShow] = useState(false);
   const [bgColor, setBgColor] = useState("bg-transparent");
   const [txtColor, setTxtColor] = useState("text-black");
-  const [logoColor, setLogoColor] = useState("bg-gradient-to-r");
 
   const handleScroll = () => {
     const scrollY = window.scrollY;
@@ -57,11 +57,11 @@ const Navbar = () => {
           );
         })}
       </ul>
-      <button className="hidden md:flex bg-black  px-2 md:px-4 py-2 rounded-md hover:scale-105 duration-200">
+      <Button className="hidden md:flex bg-black">
         <Link to="contact" smooth duration={500}>
           Contact
         </Link>
-      </button>
+      </Button>
 
       <div
         onClick={() => setShow(!show)}

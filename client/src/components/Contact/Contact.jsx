@@ -1,10 +1,12 @@
 import { MdConnectWithoutContact } from "react-icons/md";
-import { formItem, links } from "../../Data/Data";
-import Title from "../Utilities/Title";
+import { Links } from "../../Data/Links";
+import { FormItem } from "../../Data/FormItem";
+import Title from "../ui/Title";
+import Button from "../ui/Button";
 
 const Contact = () => {
-  const inputItem = formItem.filter((item) => item.categorie === "input");
-  const areaItem = formItem.filter((item) => item.categorie === "textarea");
+  const inputItem = FormItem.filter((item) => item.categorie === "input");
+  const areaItem = FormItem.filter((item) => item.categorie === "textarea");
 
   return (
     <div name="contact" className="w-full h-full bg-six py-8 relative">
@@ -18,7 +20,7 @@ const Contact = () => {
           />
           <div className="mt-4">
             <ul className="flex flex-wrap gap-4">
-              {links.map(({ id, mobile, href, download }) => (
+              {Links.map(({ id, mobile, href, download }) => (
                 <li key={id} className="hover:scale-105 duration-200">
                   <a
                     href={href ? href : "/"}
@@ -77,13 +79,10 @@ const Contact = () => {
               ></textarea>
             ))}
 
-            <button className="bg-black text-white text-sm md:text-base px-6 py-3 my-4 self-center md:self-start rounded-md hover:scale-110 duration-300">
-              Contact me
-            </button>
+            <Button className="bg-black text-white">Contact me</Button>
           </form>
         </div>
       </div>
-
     </div>
   );
 };

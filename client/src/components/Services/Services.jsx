@@ -1,8 +1,8 @@
 import React from "react";
 import Service from "./Service";
 import { MdOutlineWorkOutline } from "react-icons/md";
-import { services } from "../../Data/Data";
-import Title from "../Utilities/Title";
+import { ServicesData } from "../../Data/ServicesData";
+import Title from "../ui/Title";
 const Services = () => {
   return (
     <div name="services" className=" h-full w-full bg-six ">
@@ -14,7 +14,7 @@ const Services = () => {
         />
 
         <div data-aos="fade-up" className="">
-          <Service data={services} Title="" />
+          <Service data={ServicesData} Title="" />
         </div>
       </div>
     </div>
