@@ -8,6 +8,7 @@ import { TbBrandFiverr } from "react-icons/tb";
 import { SiMongodb, SiDocker } from "react-icons/si";
 import { SiMysql } from "react-icons/si";
 import { SiExpress } from "react-icons/si";
+import { SiWordpress } from "react-icons/si";
 
 export const Techs = [
   {
@@ -93,6 +94,13 @@ export const Techs = [
     id: 12,
     child: <SiDocker className="text-white" size={45} />,
     title: "Docker",
+    style: "bg-black",
+    type: "others",
+  },
+    {
+    id: 13,
+    child: <SiWordpress className="text-white" size={45} />,
+    title: "Wordpress",
     style: "bg-black",
     type: "others",
   },
