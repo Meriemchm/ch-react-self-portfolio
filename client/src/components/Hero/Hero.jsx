@@ -42,7 +42,7 @@ const Presentation = () => {
         </div>
 
         <div>
-          <h3 className="text-2xl font-bold">20+</h3>
+          <h3 className="text-2xl font-bold">10+</h3>
           <p className="text-sm text-gray-500">Projects Delivered</p>
         </div>
       </div>
