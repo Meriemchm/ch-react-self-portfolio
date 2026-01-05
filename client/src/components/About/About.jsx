@@ -4,6 +4,7 @@ import personal from "../../assets/Images/personal.jpg";
 import vector from "../../assets/Icons/vector.svg";
 import circle from "../../assets/Icons/circle.svg";
 import plus from "../../assets/Icons/plus.svg";
+import Button from "../ui/Button";
 
 const Home = () => {
   return (
@@ -25,21 +26,22 @@ const Home = () => {
             <span className="">Chami </span> Meriem
           </h2>
           <p className=" py-4 max-w-md md:text-base text-sm">
-            Passionate about computer science, I hold a
-            Master’s degree in Artificial Intelligence. I enjoy designing
-            efficient and innovative solutions. Thanks to my freelance
-            experience, I am autonomous, detail-oriented, and fully committed to
-            every project, with a constant focus on delivering high-quality work
-            and continuously learning.
+            Passionate about computer science, I hold a Master’s degree in
+            Artificial Intelligence. I enjoy designing efficient and innovative
+            solutions. Thanks to my freelance experience, I am autonomous,
+            detail-oriented, and fully committed to every project, with a
+            constant focus on delivering high-quality work and continuously
+            learning.
           </p>
-          <a
-            href="/CHAMI_Meriem_CV.pdf"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="border border-black bg-black text-white px-2 md:px-4 py-2 text-sm md:text-base rounded-md hover:scale-105 duration-200 self-start inline-block"
-          >
-            Download My CV
-          </a>
+          <Button className="text-white">
+            <a
+              href="/CHAMI_Meriem_CV.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Download My CV
+            </a>
+          </Button>
 
           <div className="flex pt-2">
             <ul className="flex flex-row ">
