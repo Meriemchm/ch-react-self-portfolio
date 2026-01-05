@@ -9,8 +9,7 @@ const Skills = () => {
     (tech) => tech.type === "programming languages"
   );
   const frameworkTechs = Techs.filter((tech) => tech.type === "framework");
-  const databaseTechs = Techs.filter((tech) => tech.type === "database");
-  const backendTechs = Techs.filter((tech) => tech.type === "backend");
+  const databaseTechs = Techs.filter((tech) => tech.type === "database & backend");
   const othersTechs = Techs.filter((tech) => tech.type === "others");
 
   return (
@@ -29,7 +28,6 @@ const Skills = () => {
             <Skill Title="Programming languages" data={programmingTechs} />
             <Skill Title="Framework" data={frameworkTechs} />
             <Skill Title="Database" data={databaseTechs} />
-            <Skill Title="Backend" data={backendTechs} />
             <Skill Title="Others" data={othersTechs} />
           </div>
 

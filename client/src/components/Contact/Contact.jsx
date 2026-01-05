@@ -18,7 +18,7 @@ const Contact = () => {
             title="Contact"
             description="You can Contact me here."
           />
-          <div className="mt-4">
+          <div data-aos="fade-up" className="mt-4">
             <ul className="flex flex-wrap gap-4">
               {Links.map(({ id, mobile, href, download }) => (
                 <li key={id} className="hover:scale-105 duration-200">
