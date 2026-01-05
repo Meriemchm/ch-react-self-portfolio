@@ -7,27 +7,65 @@ const Presentation = () => {
   return (
     <section
       name="home"
-      className="relative min-h-screen flex items-center justify-center overflow-hidden "
+      className="relative min-h-screen flex items-center justify-center overflow-hidden"
     >
       {/* Demi cercle background */}
-      <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-[700px] h-[350px] bg-third rounded-t-full z-0" />
+      <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-[700px] h-[350px]
+        bg-[linear-gradient(135deg,#f6ffd1_0%,#e9f79e_45%,#cfe86a_100%)]
+        rounded-t-full z-0"
+      />
 
-      {/* Content */}
-      <div className="relative z-10 text-center flex flex-col justify-center items-center gap-8 px-6 max-w-3xl">
+      {/* LEFT TEXT */}
+      <div
+        data-aos="fade-right"
+        className="hidden lg:flex flex-col gap-6 absolute left-16 top-1/2 -translate-y-1/2 max-w-xs text-left z-10"
+      >
+        <p className="text-gray-700 text-sm leading-relaxed">
+          “Building clean, scalable and modern applications with a strong
+          focus on performance and user experience.”
+        </p>
+
+        <div>
+          <h3 className="text-2xl font-bold">4+ Years</h3>
+          <p className="text-sm text-gray-500">Experience</p>
+        </div>
+      </div>
+
+      {/* RIGHT TEXT */}
+      <div
+        data-aos="fade-left"
+        className="hidden lg:flex flex-col gap-6 absolute right-16 top-1/2 -translate-y-1/2 text-right z-10"
+      >
+        <div>
+          <div className="flex justify-end text-primary text-lg">★★★★★</div>
+          <p className="text-sm text-gray-500">Highly Rated</p>
+        </div>
+
+        <div>
+          <h3 className="text-2xl font-bold">20+</h3>
+          <p className="text-sm text-gray-500">Projects Delivered</p>
+        </div>
+      </div>
+
+      {/* CENTER CONTENT */}
+      <div
+        data-aos="fade-up"
+        className="relative z-10 text-center flex flex-col justify-center items-center gap-8 px-6 max-w-3xl"
+      >
         {/* Hello badge */}
-        <span className="inline-block w-fit mb-4 px-4 py-1 text-sm rounded-full bg-black text-white">
+        <span className="inline-flex w-fit px-4 py-1 text-sm rounded-full bg-black text-white">
           Hello !
         </span>
 
         {/* Title */}
-        <h1 className="text-4xl md:text-6xl font-bold mb-6">
+        <h1 className="text-4xl md:text-6xl font-bold">
           I’m <span className="text-primary">CHAMI Meriem</span>,
           <br />
           Software Engineer
         </h1>
 
         {/* Type animation */}
-        <p className="text-xl md:text-2xl  mb-4">
+        <p className="text-xl md:text-2xl">
           <TypeAnimation
             sequence={[
               "Full-Stack Developer",
@@ -41,16 +79,13 @@ const Presentation = () => {
             repeat={Infinity}
           />
         </p>
-        {/* /*  
-      
-        <p className="text-gray-600 mb-8 text-lg">
-          Building modern software with performance & elegance.
-        </p> */}
 
         {/* Buttons */}
-        <div className="flex justify-center mb-auto items-end gap-4">
+        <div className="flex gap-4 bg-white/70 px-3 py-2 mb-auto justify-self-end rounded-full">
           <Link to="contact" smooth duration={500}>
-            <Button className="bg-primary text-white">Contact Me</Button>
+            <Button className="bg-primary text-white">
+              Contact Me
+            </Button>
           </Link>
 
           <Link to="about" smooth duration={500}>
