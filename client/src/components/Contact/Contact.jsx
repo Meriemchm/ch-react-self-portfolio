@@ -9,7 +9,7 @@ const Contact = () => {
   const areaItem = FormItem.filter((item) => item.categorie === "textarea");
 
   return (
-    <div name="contact" className="w-full h-full bg-six py-8 relative">
+    <div name="contact" className="w-full min-h-screen flex items-center mx-auto bg-six py-8 relative">
       <div className="flex flex-col md:flex-row p-4 max-w-screen-lg mx-auto h-full w-full">
         {/* first section */}
         <div className="flex flex-col md:w-1/2" data-aos="fade-up">
