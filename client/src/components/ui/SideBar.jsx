@@ -19,7 +19,7 @@ const SideBar = () => {
     setActive(newActive);
   };
   return (
-    <div className="md:grid md:grid-cols-4">
+    <div data-aos="fade-up" className="md:grid md:grid-cols-4">
       <div className=" md:h-full w-full overflow-x-scroll force-scrollbar md:overflow-y-scroll md:overflow-x-hidden ">
         <div className="flex flex-row md:flex-col gap-5 p-2 select-none ">
           {MenuItem.map((item, id) => {

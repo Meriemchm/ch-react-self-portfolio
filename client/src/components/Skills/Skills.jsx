@@ -14,7 +14,7 @@ const Skills = () => {
 
   return (
     <div name="skills" className="bg-white w-full">
-      <div className="max-w-screen-lg mx-auto p-4 flex flex-col w-full min-h-screen">
+      <div className="max-w-screen-lg mx-auto py-12 flex flex-col w-full min-h-screen">
         <Title
           icon={<GiSkills size={40} className="text-white" />}
           title="Skills"
