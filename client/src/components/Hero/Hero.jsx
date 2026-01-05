@@ -52,10 +52,7 @@ const Presentation = () => {
         data-aos="fade-up"
         className="relative z-10 text-center flex flex-col justify-center items-center gap-8 px-6 max-w-3xl"
       >
-        {/* Hello badge */}
-        <span className="inline-flex w-fit px-4 py-1 text-sm rounded-full bg-black text-white">
-          Hello !
-        </span>
+
 
         {/* Title */}
         <h1 className="text-4xl md:text-6xl font-bold">
@@ -81,7 +78,7 @@ const Presentation = () => {
         </p>
 
         {/* Buttons */}
-        <div className="flex gap-4 bg-white/70 px-3 py-2 mb-auto justify-self-end rounded-full">
+        <div className="flex gap-4 bg-white/70 px-3 mb-auto rounded-full">
           <Link to="contact" smooth duration={500}>
             <Button className="bg-primary text-white">
               Contact Me
