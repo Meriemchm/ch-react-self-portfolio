@@ -4,9 +4,11 @@
 @tailwind components;
 @tailwind utilities;
 
+
 @layer base {
   html {
     font-family: "Raleway", sans-serif;
+    scroll-behavior: smooth;
   }
 }
 
