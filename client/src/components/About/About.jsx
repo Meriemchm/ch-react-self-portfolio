@@ -33,15 +33,15 @@ const Home = () => {
             constant focus on delivering high-quality work and continuously
             learning.
           </p>
-          <Button className="text-white">
             <a
               href="/CHAMI_Meriem_CV.pdf"
               target="_blank"
               rel="noopener noreferrer"
             >
+          <Button className="text-white">
               Download My CV
-            </a>
           </Button>
+            </a>
 
           <div className="flex pt-2">
             <ul className="flex flex-row ">
