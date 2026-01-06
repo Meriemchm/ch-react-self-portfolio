@@ -20,10 +20,10 @@ const Home = () => {
           className="flex flex-col md:justify-center h-full gap-2"
           data-aos="fade-up"
         >
-          <h2 className="text-4xl md:text-7xl font-bold  font-playfair">
+          <h2 className="text-4xl md:text-7xl font-extralight  Aboreto ">
             I'm{" "}
             {/* {" font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 to-four"} */}
-            <span className="">Chami </span> Meriem
+            <span className=" ">Chami </span> Meriem
           </h2>
           <p className=" py-4 max-w-md md:text-base text-sm">
             Passionate about computer science, I hold a Master’s degree in
