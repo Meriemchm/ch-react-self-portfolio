@@ -57,12 +57,10 @@ const Presentation = () => {
         {/* Title */}
         <h1 className="text-4xl md:text-6xl font-bold">
           I’m <span className="text-primary">CHAMI Meriem</span>,
-          <br />
-          Software Engineer
         </h1>
 
         {/* Type animation */}
-        <p className="text-xl md:text-2xl">
+        <p className="text-xs md:text-sm tracking-[0.25em] text-gray-500 uppercase">
           <TypeAnimation
             sequence={[
               "Full-Stack Developer",
