@@ -18,7 +18,7 @@ const HoverButton = ({
     >
       <button
         className={`flex w1/2 px-6 py-3 m-4 duration-200 hover:scale-105 items-center ${
-          bordered ? "border rounded-md" : ""
+          bordered ? "border rounded-full" : ""
         }`}
       >
         <span className="font-bold md:text-lg text-base">{label}</span>

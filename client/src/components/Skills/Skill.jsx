@@ -3,7 +3,7 @@ import React from "react";
 const Skill = ({ Title, data }) => {
   return (
     <>
-      <h2 data-aos="fade-up"  className="md:text-2xl text-xl text-gray-500 py-4">{Title}</h2>
+      <h2 data-aos="fade-up"  className="md:text-xl font-extralight text-lg text-gray-500 py-4">{Title}</h2>
       <div data-aos="fade-up"  className="rounded-xl ">
         <div className=" w-full grid grid-cols-3 sm:grid-cols-4 text-center py-8 md:gap-12 sm:px-0 justify-center rounded-2xl">
           {data.map(({ id, title, child, style }) => (

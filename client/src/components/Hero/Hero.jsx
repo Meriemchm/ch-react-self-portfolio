@@ -10,7 +10,8 @@ const Presentation = () => {
       className="relative min-h-screen flex items-center justify-center overflow-hidden"
     >
       {/* Demi cercle background */}
-      <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-[700px] h-[350px]
+      <div
+        className="absolute bottom-0 left-1/2 -translate-x-1/2 w-[700px] h-[350px]
         bg-[linear-gradient(135deg,#f6ffd1_0%,#e9f79e_45%,#cfe86a_100%)]
         rounded-t-full z-0"
       />
@@ -21,8 +22,8 @@ const Presentation = () => {
         className="hidden lg:flex flex-col gap-6 absolute left-16 top-1/2 -translate-y-1/2 max-w-xs text-left z-10"
       >
         <p className="text-gray-700 text-sm leading-relaxed">
-          “Building clean, scalable and modern applications with a strong
-          focus on performance and user experience.”
+          “Building clean, scalable and modern applications with a strong focus
+          on performance and user experience.”
         </p>
 
         <div>
@@ -52,12 +53,13 @@ const Presentation = () => {
         data-aos="fade-up"
         className="relative z-10 text-center flex flex-col justify-center items-center gap-8 px-6 max-w-3xl"
       >
-
-
         {/* Title */}
-        <h1 className="text-4xl md:text-6xl font-extrabold Aboreto uppercase">
-          I’m <span className="text-primary ">CHAMI Meriem</span>
-        </h1>
+        <div className="flex flex-col justify-start   Aboreto ">
+           <p className="text-left capitalize">Hey I’m,{" "}</p>
+          <h1 className="text-primary text-4xl md:text-6xl  font-extrabold uppercase">
+            CHAMI Meriem
+          </h1>
+        </div>
 
         {/* Type animation */}
         <p className="text-xs md:text-sm tracking-[0.25em] text-gray-500 uppercase">
@@ -78,9 +80,7 @@ const Presentation = () => {
         {/* Buttons */}
         <div className="flex gap-4 bg-white/70 px-3 mb-auto rounded-full">
           <Link to="contact" smooth duration={500}>
-            <Button className="bg-primary text-white">
-              Contact Me
-            </Button>
+            <Button className="bg-primary text-white">Contact Me</Button>
           </Link>
 
           <Link to="about" smooth duration={500}>

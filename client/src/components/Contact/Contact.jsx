@@ -9,7 +9,10 @@ const Contact = () => {
   const areaItem = FormItem.filter((item) => item.categorie === "textarea");
 
   return (
-    <div name="contact" className="w-full min-h-screen flex items-center mx-auto bg-six py-8 relative">
+    <div
+      name="contact"
+      className="w-full min-h-screen flex items-center mx-auto bg-six py-8 relative"
+    >
       <div className="flex flex-col md:flex-row p-4 max-w-screen-lg mx-auto h-full w-full">
         {/* first section */}
         <div className="flex flex-col md:w-1/2" data-aos="fade-up">
@@ -40,7 +43,7 @@ const Contact = () => {
         {/* second section */}
         <div
           data-aos="fade-up"
-          className="flex md:flex-1 mt-8 md:mt-0 flex-col justify-center items-center gap-4 relative"
+          className="flex md:flex-1  mt-8 md:mt-0 flex-col justify-center items-center gap-4 relative"
         >
           {/* Fleur arrière-plan
           <img
@@ -53,17 +56,31 @@ const Contact = () => {
           <form
             action="https://getform.io/f/c32b25bc-8fbe-4a27-b89c-9bea5bcf16be"
             method="POST"
-            className="relative z-10 flex flex-col w-full gap-4"
+            className="w-full max-w-md bg-gradient-to-b from-primary/50 to-second rounded-xl p-8 shadow-2xl flex flex-col gap-6"
           >
+            <h3 className="text-center text-white text-xl font-semibold tracking-widest">
+              GET IN TOUCH
+            </h3>
+
             {inputItem.map((item, id) => (
               <input
                 key={id}
                 type={item.type}
                 name={item.name}
-                autoComplete="off"
-                required
                 placeholder={item.placeholder}
-                className="p-3 bg-transparent border border-gray-400 rounded-md text-gray-800 placeholder-gray-500 focus:outline-none"
+                required
+                className="
+  bg-transparent
+  border-b border-white/40
+  py-2
+  text-white
+  placeholder-white/50
+  focus:outline-none
+  focus:border-white
+  focus:bg-transparent
+  autofill:bg-transparent
+"
+
               />
             ))}
 
@@ -72,14 +89,18 @@ const Contact = () => {
                 key={id}
                 name={item.name}
                 placeholder={item.placeholder}
-                rows="8"
-                autoComplete="off"
+                rows="4"
                 required
-                className="resize-none p-3 bg-transparent border border-gray-400 rounded-md text-gray-800 placeholder-gray-500 focus:outline-none"
-              ></textarea>
+                className="bg-transparent border-b border-white/40 py-2 text-white placeholder-white/50 resize-none focus:outline-none focus:border-white transition"
+              />
             ))}
 
-            <Button className="bg-black text-white">Contact me</Button>
+            <button
+              type="submit"
+              className="mt-6 self-center px-8 py-2 rounded-full bg-transparent border border-white text-white shadow-md hover:scale-105 transition"
+            >
+              Send Message
+            </button>
           </form>
         </div>
       </div>

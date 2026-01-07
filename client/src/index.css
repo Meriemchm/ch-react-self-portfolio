@@ -70,7 +70,7 @@
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #888;
+  background: #e4e2e2;
   border-radius: 5px;
 }
 
@@ -87,4 +87,22 @@
 canvas {
   height: 100vh !important;
   width: 100%;
+}
+
+input,
+textarea {
+  background-color: transparent !important;
+  color: white;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus {
+  -webkit-box-shadow: 0 0 0 1000px transparent inset !important;
+  -webkit-text-fill-color: white !important;
+  caret-color: white !important;
+  transition: background-color 9999s ease-in-out 0s;
 }
