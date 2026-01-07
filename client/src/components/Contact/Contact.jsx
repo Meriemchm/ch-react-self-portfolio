@@ -56,7 +56,7 @@ const Contact = () => {
           <form
             action="https://getform.io/f/c32b25bc-8fbe-4a27-b89c-9bea5bcf16be"
             method="POST"
-            className="w-full max-w-md bg-gradient-to-b from-primary/50 to-second rounded-xl p-8 shadow-2xl flex flex-col gap-6"
+            className="w-full max-w-md bg-gradient-to-b from-primary/35 to-second rounded-xl p-8 shadow-2xl flex flex-col gap-6"
           >
             <h3 className="text-center text-white text-xl font-semibold tracking-widest">
               GET IN TOUCH
@@ -80,7 +80,6 @@ const Contact = () => {
   focus:bg-transparent
   autofill:bg-transparent
 "
-
               />
             ))}
 
@@ -97,7 +96,7 @@ const Contact = () => {
 
             <button
               type="submit"
-              className="mt-6 self-center px-8 py-2 rounded-full bg-transparent border border-white text-white shadow-md hover:scale-105 transition"
+              className="mt-6 self-center px-8 py-2 rounded-full bg-transparent border border-white text-white hover:scale-105 transition"
             >
               Send Message
             </button>

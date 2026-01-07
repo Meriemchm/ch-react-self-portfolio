@@ -1,35 +1,61 @@
-import React from "react";
+import { FiArrowUpRight } from "react-icons/fi";
 
-const Service = ({ data, Title }) => {
-  let NewData = null;
-  if (Title) {
-    NewData = data.filter((item) => item.service === Title);
-  } else {
-    NewData = data;
-  }
-
+const Service = ({ data }) => {
   return (
-    <>
-      <div className=" flex flex-col">
-        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-6 text-center py-8 justify-center items-center ">
-          {NewData.map(({ id, title, src, style, textStyle }) => (
-            <div
-              key={id}
-              className={`flex flex-col justify-center items-center p-5 ${style} w-64 h-52 mx-auto commonStyle shadow-sm`}
-            >
-              <div className="pt-5 flex w-24 h-24">
-                <div className="m-auto w-24 h-24 flex justify-center items-start">
-                  {src}
-                </div>
-              </div>
-              <p className={`py-8  font-bold text-sm md:text-base text-start ${textStyle}`}>
-                {title}
-              </p>
-            </div>
-          ))}
-        </div>
+    <div className="relative w-full py-16">
+      
+      {/* LINES — desktop only */}
+      <div className="absolute inset-0 pointer-events-none hidden md:block">
+        {/* Vertical line */}
+        <div className="absolute top-0 left-1/2 h-full w-px bg-gray-300" />
+        {/* Horizontal line */}
+        <div className="absolute left-0 top-1/2 w-full h-px bg-gray-300" />
       </div>
-    </>
+
+      {/* GRID */}
+      <div className="relative grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-0">
+        {data.map(({ id, src, title, description, active, style }) => (
+          <div
+            key={id}
+            className={`
+              relative p-8 h-72
+              flex flex-col justify-between
+              transition-colors duration-300
+              rounded-lg
+              
+              /* MOBILE */
+              border border-gray-300
+
+              /* DESKTOP */
+              md:border-none
+              text-black
+              md:m-2
+
+              ${style}
+            `}
+          >
+            {/* TITLE */}
+            <h3 className="text-2xl font-medium whitespace-pre-line">
+              {title}
+            </h3>
+
+            {/* DESCRIPTION */}
+            <p
+              className={`text-sm max-w-xs `}
+            >
+              {description}
+            </p>
+
+            {/* ARROW */}
+            <div
+              className={`absolute md:bottom-8 right-8 text-2xl `}
+            >
+              {src}
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
   );
 };
 
