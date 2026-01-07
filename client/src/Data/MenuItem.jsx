@@ -1,4 +1,5 @@
 export const MenuItem = [
+  { id: 7, title: "AI. Studio" },
   { id: 1, title: "dental clinic" },
   {
     id: 2,

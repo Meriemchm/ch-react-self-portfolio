@@ -10,7 +10,7 @@ export const Links = [
         <FaLinkedin size={30} />
       </>
     ),
-    href: "",
+    href: "https://www.linkedin.com/in/meriem-chami-361213283/",
   },
   {
     id: 2,

@@ -11,6 +11,8 @@ import portfolio_1 from "../assets/Images/ad-1.png";
 import portfolio_2 from "../assets/Images/ad-2.png";
 import Flexflow from "../assets/Images/flexflow.png";
 import Flexflow_2 from "../assets/Images/flexflow_2.png";
+import AiStudio from "../assets/Images/ai-studio.webp";
+import AiStudio_2 from "../assets/Images/ai-studio-2.webp";
 
 export const Projects = [
   {
@@ -48,7 +50,7 @@ export const Projects = [
     ],
   },
   {
-    id: 4,
+    id: 3,
     src: [rameem, rameemDash, rameemHistoryDash],
     title: "rameem",
     description:
@@ -58,7 +60,7 @@ export const Projects = [
     hdemo: "https://rameemm.netlify.app",
   },
   {
-    id: 5,
+    id: 4,
     src: [Flexflow, Flexflow_2],
     title: "flexflow",
     description:
@@ -68,7 +70,7 @@ export const Projects = [
     hdemo: "https://flexxflow.vercel.app",
   },
   {
-    id: 6,
+    id: 5,
     src: [bookTracker],
     title: "book tracker API",
     description:
@@ -90,7 +92,7 @@ export const Projects = [
     ],
   },
   {
-    id: 7,
+    id: 6,
     src: [portfolio_1, portfolio_2],
     title: "A. D | Portfolio",
     description:
@@ -98,5 +100,15 @@ export const Projects = [
     techs: ["Next.js", "Tailwind CSS", "Gsap", "Frame motion", "lenis scroll"],
     hcode: "https://github.com/Meriemchm/chm_portfolio_showcase_photographer",
     hdemo: "https://adportfolio-two.vercel.app",
+  },
+    {
+    id: 7,
+    src: [AiStudio, AiStudio_2],
+    title: "AI. Studio",
+    description:
+      "I design and build immersive digital experiences where technology, creativity, and interaction converge. Through modern web technologies and 3D-driven interfaces.",
+    techs: ["Next.js", "Tailwind CSS", "Gsap", "Frame motion", "lenis scroll"],
+    hcode: "https://github.com/Meriemchm/chm_3d_interactive_next.js_website",
+    hdemo: "https://chm-3d-interactive-next-js-website.vercel.app",
   },
 ];
