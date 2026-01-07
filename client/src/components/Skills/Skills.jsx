@@ -18,6 +18,7 @@ const Skills = () => {
         <Title
           icon={<GiSkills size={40} className="text-white" />}
           title="Skills"
+          direction="row"
           description="Here are some of the tools i work with."
         />
 

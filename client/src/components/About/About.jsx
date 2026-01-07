@@ -14,16 +14,36 @@ const Home = () => {
     >
       <div
         data-aos="fade-up"
-        className="max-w-screen-lg mx-auto flex flex-col-reverse justify-center items-center h-full px-8 my-16 gap-5 md:gap-0 md:flex-row md:my-0 z-10"
+        className=" w-full mx-auto flex md:flex-row flex-col-reverse md:justify-evenly items-center h-full px-8 my-16 gap-12 md:gap-0  md:my-0 z-10"
       >
         <div
           className="flex flex-col md:justify-center h-full gap-2"
           data-aos="fade-up"
         >
-          <h2 className="text-4xl md:text-7xl font-extralight  Aboreto ">
-            I'm{" "}
+                    <div className="flex pt-2">
+            <ul className="flex flex-row ">
+              {Links.map(({ id, mobile, href, download }) => {
+                return (
+                  <li key={id} className="mr-5 hover:scale-105 duration-200">
+                    <a
+                      href={href ? href : "/"}
+                      download={download}
+                      target="_blank"
+                      rel="noreferrer"
+                      className="flex justify-between items-center w-full "
+                    >
+                      {mobile}
+                    </a>
+                  </li>
+                );
+              })}
+            </ul>
+          </div>
+          <p className="text-3xl font-semibold uppercase pt-4 text-white/50">Hello, </p>
+          <h2 className="text-4xl md:text-5xl font-extralight  Aboreto ">
+            i'm
             {/* {" font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 to-four"} */}
-            <span className=" ">Chami </span> Meriem
+            <span className=" "> Chami </span>Meriem
           </h2>
           <p className=" py-4 max-w-md md:text-base text-sm">
             Passionate about computer science, I hold a Master’s degree in
@@ -43,26 +63,11 @@ const Home = () => {
           </Button>
             </a>
 
-          <div className="flex pt-2">
-            <ul className="flex flex-row ">
-              {Links.map(({ id, mobile, href, download }) => {
-                return (
-                  <li key={id} className="mr-5 hover:scale-105 duration-200">
-                    <a
-                      href={href ? href : "/"}
-                      download={download}
-                      target="_blank"
-                      rel="noreferrer"
-                      className="flex justify-between items-center w-full "
-                    >
-                      {mobile}
-                    </a>
-                  </li>
-                );
-              })}
-            </ul>
-          </div>
+
         </div>
+
+
+        {/* Image et vecteurs */}
         <div
           className="relative  hover:scale-105 duration-20"
           data-aos="fade-up"
