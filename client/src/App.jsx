@@ -10,7 +10,7 @@ import ChatBubble from "./components/ChatBot/ChatBubble";
 import useLenis from "./hooks/useLenis"; 
 
 const App = () => {
-  useLenis();
+  // useLenis();
   useEffect(() => {
     fetch(`${import.meta.env.VITE_API_URL}/ping`).catch((err) =>
       console.error("Ping failed:", err)
