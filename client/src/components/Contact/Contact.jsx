@@ -58,7 +58,7 @@ const Contact = () => {
             method="POST"
             className="w-full max-w-md bg-gradient-to-b from-primary/35 to-second rounded-xl p-8 shadow-2xl flex flex-col gap-6"
           >
-            <h3 className="text-center text-white text-xl font-semibold tracking-widest">
+            <h3 className="hidden md:block text-center text-white text-xl font-semibold tracking-widest">
               GET IN TOUCH
             </h3>
 
