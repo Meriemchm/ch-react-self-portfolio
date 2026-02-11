@@ -39,7 +39,7 @@ const Home = () => {
               })}
             </ul>
           </div>
-          <p className="text-3xl font-semibold uppercase pt-4 text-white/50">Hello, </p>
+          <p className="text-3xl font-semibold uppercase pt-4 text-white/70">Hello, </p>
           <h2 className="text-4xl md:text-5xl font-extralight  Aboreto ">
             i'm
             {/* {" font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 to-four"} */}
