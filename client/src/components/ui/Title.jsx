@@ -11,10 +11,10 @@ const Title = ({ icon, title, description, direction = "col" }) => {
         }`}
       >
         {/* LEFT : title / skills {icon && <span>{icon}</span>} */}
-        <p className="md:text-5xl text-3xl font-bold text-black Aboreto">
+        <p className=" md:text-5xl text-3xl font-bold text-black Aboreto">
           {title}
         </p>
-        <p className="text-gray-900/60 ">{description}</p>
+        <p className="text-gray-900/60 hidden md:block">{description}</p>
       </div>
     </div>
   );
