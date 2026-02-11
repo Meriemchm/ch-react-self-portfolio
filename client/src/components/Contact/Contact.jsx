@@ -71,10 +71,10 @@ const Contact = () => {
                 required
                 className="
   bg-transparent
-  border-b border-white/40
+  border-b border-white/80
   py-2
   text-white
-  placeholder-white/50
+  placeholder-white/80
   focus:outline-none
   focus:border-white
   focus:bg-transparent
@@ -90,7 +90,7 @@ const Contact = () => {
                 placeholder={item.placeholder}
                 rows="4"
                 required
-                className="bg-transparent border-b border-white/40 py-2 text-white placeholder-white/50 resize-none focus:outline-none focus:border-white transition"
+                className="bg-transparent border-b border-white/80 py-2 text-white placeholder-white/80 resize-none focus:outline-none focus:border-white transition"
               />
             ))}
 
