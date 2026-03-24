@@ -32,6 +32,7 @@ const Service = ({ data }) => {
               md:m-2
 
               ${style}
+              hover:bg-gray-100 transition duration-200
             `}
           >
             {/* TITLE */}
