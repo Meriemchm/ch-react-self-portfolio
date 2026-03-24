@@ -1,27 +1,47 @@
+"use client";
+
 import { MdConnectWithoutContact } from "react-icons/md";
 import { Links } from "../../Data/Links";
 import { FormItem } from "../../Data/FormItem";
 import Title from "../ui/Title";
 import Button from "../ui/Button";
 
+import { useForm } from "react-hook-form";
+import { zodResolver } from "@hookform/resolvers/zod";
+import { contactSchema } from "../../schemas/contactSchema";
+
 const Contact = () => {
   const inputItem = FormItem.filter((item) => item.categorie === "input");
   const areaItem = FormItem.filter((item) => item.categorie === "textarea");
 
+  const {
+    register,
+    handleSubmit,
+    formState: { errors },
+  } = useForm({
+    resolver: zodResolver(contactSchema),
+  });
+
+  const onSubmit = async (data) => {
+    await fetch("https://formspree.io/f/xojpavnj", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(data),
+    });
+  };
+
   return (
-    <div
-      name="contact"
-      className="w-full min-h-screen flex items-center mx-auto bg-six py-8 relative"
-    >
+    <div className="w-full min-h-screen flex items-center mx-auto bg-six py-8 relative">
       <div className="flex flex-col md:flex-row p-4 max-w-screen-lg mx-auto h-full w-full">
-        {/* first section */}
-        <div className="flex flex-col md:w-1/2" data-aos="fade-up">
+        <div className="flex flex-col md:w-1/2">
           <Title
             icon={<MdConnectWithoutContact size={40} className="text-white" />}
             title="Contact"
             description="You can Contact me here."
           />
-          <div data-aos="fade-up" className="mt-4">
+          <div className="mt-4">
             <ul className="flex flex-wrap gap-4">
               {Links.map(({ id, mobile, href, download }) => (
                 <li key={id} className="hover:scale-105 duration-200">
@@ -30,7 +50,7 @@ const Contact = () => {
                     download={download}
                     target="_blank"
                     rel="noreferrer"
-                    className="flex items-center text-sm sm:text-base "
+                    className="flex items-center text-sm sm:text-base"
                   >
                     {mobile}
                   </a>
@@ -40,58 +60,45 @@ const Contact = () => {
           </div>
         </div>
 
-        {/* second section */}
-        <div
-          data-aos="fade-up"
-          className="flex md:flex-1  mt-8 md:mt-0 flex-col justify-center items-center gap-4 relative"
-        >
-          {/* Fleur arrière-plan
-          <img
-            src={flower}
-            alt="flower-icon"
-            className="hidden md:flex absolute bottom-0 right-0 z-0 opacity-80 pointer-events-none"
-          /> */}
-
-          {/* Form https://getform.io/f/c32b25bc-8fbe-4a27-b89c-9bea5bcf16be  */}
+        <div className="w-full flex md:flex-1 mt-8 md:mt-0 flex-col justify-center items-center gap-4">
           <form
-            action="https://formspree.io/f/xojpavnj"
-            method="POST"
+            onSubmit={handleSubmit(onSubmit)}
             className="w-full max-w-md bg-gradient-to-b from-primary/35 to-second rounded-xl p-8 shadow-2xl flex flex-col gap-6"
           >
             <h3 className="hidden md:block text-center text-white text-xl font-semibold tracking-widest">
               GET IN TOUCH
             </h3>
 
-            {inputItem.map((item, id) => (
-              <input
-                key={id}
-                type={item.type}
-                name={item.name}
-                placeholder={item.placeholder}
-                required
-                className="
-                  bg-transparent
-                  border-b border-white/80
-                  py-2
-                  text-white
-                  placeholder-white/80
-                  focus:outline-none
-                  focus:border-white
-                  focus:bg-transparent
-                  autofill:bg-transparent
-                "
-              />
+            {inputItem.map((item) => (
+              <div key={item.id} className="w-full">
+                <input
+                  type={item.type}
+                  placeholder={item.placeholder}
+                  {...register(item.name)}
+                  className="bg-transparent w-full border-b border-white/80 py-2 text-white placeholder-white/80 focus:outline-none focus:border-white"
+                />
+                {errors[item.name] && (
+                  <p className="text-red-400 text-sm">
+                    {errors[item.name]?.message}
+                  </p>
+                )}
+              </div>
             ))}
 
-            {areaItem.map((item, id) => (
-              <textarea
-                key={id}
-                name={item.name}
-                placeholder={item.placeholder}
-                rows="4"
-                required
-                className="bg-transparent border-b border-white/80 py-2 text-white placeholder-white/80 resize-none focus:outline-none focus:border-white transition"
-              />
+            {areaItem.map((item) => (
+              <div key={item.id} className="w-full">
+                <textarea
+                  rows={4}
+                  placeholder={item.placeholder}
+                  {...register(item.name)}
+                  className="bg-transparent w-full border-b border-white/80 py-2 text-white placeholder-white/80 resize-none focus:outline-none focus:border-white"
+                />
+                {errors[item.name] && (
+                  <p className="text-red-400 text-sm">
+                    {errors[item.name]?.message}
+                  </p>
+                )}
+              </div>
             ))}
 
             <button

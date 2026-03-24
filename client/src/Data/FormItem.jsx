@@ -16,6 +16,14 @@ export const FormItem = [
     categorie: "input",
   },
   {
+    id: 4,
+    name: "subject",
+    type: "text",
+    placeholder: "Enter your subject",
+    pattern: "[A-Za-z]+",
+    categorie: "input",
+  },
+  {
     id: 3,
     name: "message",
     placeholder: "Enter your message",
