@@ -52,9 +52,9 @@ const Contact = () => {
             className="hidden md:flex absolute bottom-0 right-0 z-0 opacity-80 pointer-events-none"
           /> */}
 
-          {/* Form */}
+          {/* Form https://getform.io/f/c32b25bc-8fbe-4a27-b89c-9bea5bcf16be  */}
           <form
-            action="https://getform.io/f/c32b25bc-8fbe-4a27-b89c-9bea5bcf16be"
+            action="https://formspree.io/f/xojpavnj"
             method="POST"
             className="w-full max-w-md bg-gradient-to-b from-primary/35 to-second rounded-xl p-8 shadow-2xl flex flex-col gap-6"
           >
@@ -70,16 +70,16 @@ const Contact = () => {
                 placeholder={item.placeholder}
                 required
                 className="
-  bg-transparent
-  border-b border-white/80
-  py-2
-  text-white
-  placeholder-white/80
-  focus:outline-none
-  focus:border-white
-  focus:bg-transparent
-  autofill:bg-transparent
-"
+                  bg-transparent
+                  border-b border-white/80
+                  py-2
+                  text-white
+                  placeholder-white/80
+                  focus:outline-none
+                  focus:border-white
+                  focus:bg-transparent
+                  autofill:bg-transparent
+                "
               />
             ))}
 
