@@ -3,13 +3,14 @@ import { FiArrowUpRight } from "react-icons/fi";
 const Service = ({ data }) => {
   return (
     <div className="relative w-full py-16">
-      
       {/* LINES — desktop only */}
       <div className="absolute inset-0 pointer-events-none hidden md:block">
-        {/* Vertical line */}
-        <div className="absolute top-0 left-1/2 h-full w-px bg-gray-300" />
+        {/* Top row vertical line */}
+        <div className="absolute top-20 left-1/2 h-72 w-px bg-gray-300" />
+        {/* Bottom row vertical line */}
+        <div className="absolute bottom-20 left-1/2 h-72 w-px bg-gray-300" />
         {/* Horizontal line */}
-        <div className="absolute left-0 top-1/2 w-full h-px bg-gray-300" />
+        <div className="absolute left-2 right-2 top-1/2 h-px bg-gray-300" />
       </div>
 
       {/* GRID */}
@@ -32,25 +33,19 @@ const Service = ({ data }) => {
               md:m-2
 
               ${style}
-              hover:bg-gray-100 transition duration-200
+              hover:bg-third/20 transition duration-200
             `}
           >
             {/* TITLE */}
-            <h3 className="text-2xl font-medium whitespace-pre-line">
+            <h3 className="text-2xl font-medium whitespace-pre-line max-w-[250px] sm:max-w-md">
               {title}
             </h3>
 
             {/* DESCRIPTION */}
-            <p
-              className={`text-sm max-w-xs `}
-            >
-              {description}
-            </p>
+            <p className={`text-sm max-w-xs `}>{description}</p>
 
             {/* ARROW */}
-            <div
-              className={`absolute md:bottom-8 right-8 text-2xl `}
-            >
+            <div className={`absolute md:bottom-8 right-8 text-2xl `}>
               {src}
             </div>
           </div>
