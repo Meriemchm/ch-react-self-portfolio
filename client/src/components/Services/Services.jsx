@@ -6,7 +6,7 @@ import Title from "../ui/Title";
 const Services = () => {
   return (
     <div name="services" className=" h-full w-full bg-six ">
-      <div className="max-w-screen-lg mx-auto p-4 flex flex-col  w-full h-full text-white">
+      <div className="max-w-screen-lg mx-auto py-4 px-4 md:px-8 xl:px-0  flex flex-col  w-full h-full text-white">
         <Title
           icon={<MdOutlineWorkOutline className="text-white" size={40} />}
           title="Services"

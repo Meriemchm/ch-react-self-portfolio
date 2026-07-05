@@ -52,7 +52,7 @@ const Contact = () => {
 
   return (
     <div name="contact" className="w-full min-h-screen flex items-center mx-auto bg-six py-8 relative">
-      <div className="flex flex-col md:flex-row p-4 max-w-screen-lg mx-auto h-full w-full">
+      <div className="flex flex-col md:flex-row py-4 px-4 md:px-8 xl:px-0  max-w-screen-lg mx-auto h-full w-full">
         {/* Partie gauche : titre et liens */}
         <div className="flex flex-col md:w-1/2">
           <Title
