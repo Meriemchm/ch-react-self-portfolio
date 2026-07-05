@@ -111,7 +111,7 @@ const ChatWindow = ({ onClose }) => {
         <input
           type="text"
           placeholder="Ask me anything..."
-          className="flex-1 border rounded-full px-4 py-2 text-sm focus:outline-none"
+          className="flex-1 text-black border rounded-full px-4 py-2 text-sm focus:outline-none"
           value={input}
           onChange={(e) => setInput(e.target.value)}
           disabled={isLoading} 
